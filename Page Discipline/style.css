@@ -1,0 +1,28 @@
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 1em;
+    margin-bottom: 3em;
+}
+
+h3 {
+    display: block;
+}
+
+p {
+    text-align: justify;
+}
+
+aside {
+    width: 13em;
+    background-color: #33ac91;
+    margin-left: 0;
+}
+
+a:active, a:hover, a:visited, a:focus, a {
+    color: black;
+    text-decoration: none;
+}
