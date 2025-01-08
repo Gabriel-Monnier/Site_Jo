@@ -4,9 +4,6 @@ body{
     margin: 0;
 }
 
-header{
-    background-color: #3CDB8C;
-}
 
 main{
     margin: 0 30px;
@@ -23,9 +20,36 @@ main > section:nth-child(3){
 }
 
 
+/*-----HEADER-----*/
 
+header{
+    background-color: #3CDB8C;
+    padding: 2em 2em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
+header > nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50em;
+}
 
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding-left: 5em;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
 
 /*-----FOOTER-----*/
@@ -55,12 +79,13 @@ footer > nav {
     flex-direction: row;
 }
 
-footer a:visited, footer a:hover {
-    color: white;
+footer a:hover {
+    color: lightgray;
 }
 
 footer a{
     text-decoration: none;
+    color: white;
 }
 
 footer ul {
@@ -72,7 +97,7 @@ footer ul:nth-child(2){
     padding-left: 5em;
 }
 
-.reseau{
+footer div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
