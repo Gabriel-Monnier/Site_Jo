@@ -5,50 +5,6 @@ body{
 }
 
 
-
-
-
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background-color: #3CDB8C;
-    padding: 10px 20px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 50em; /* Espacement entre les deux groupes de menus */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 0em 2em;
-}
-
-nav ul:last-child {
-    margin-left: auto; /* Décale le dernier groupe de menus à droite */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: gray;
-}
-
-
-
-
 main{
     margin: 0 30px;
     padding: 10px 25px;
@@ -64,9 +20,36 @@ main > section:nth-child(3){
 }
 
 
+/*-----HEADER-----*/
 
+header{
+    background-color: #3CDB8C;
+    padding: 2em 2em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
+header > nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50em;
+}
 
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding-left: 5em;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
 
 /*-----FOOTER-----*/
@@ -114,7 +97,7 @@ footer ul:nth-child(2){
     padding-left: 5em;
 }
 
-.reseau{
+footer div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
