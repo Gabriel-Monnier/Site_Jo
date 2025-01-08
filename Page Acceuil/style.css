@@ -32,6 +32,11 @@ section {
     height: auto;
 }
 
+.Partenaire img {
+    width: 550px;
+    height: auto;
+}
+
 /*-----FOOTER-----*/
 
 footer {
