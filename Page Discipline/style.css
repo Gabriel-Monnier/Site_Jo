@@ -1,3 +1,9 @@
+main {
+    margin: 8em;
+}
+
+
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -22,10 +28,32 @@
     /* Supprime les marges par défaut */
 }
 
+/* Pour les joueurs d'escrimes*/
+h2+section {
+    background-color: #33ac91;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+figcaption {
+    font-size: 1.5em;
+}
+
+section>h2 {
+    font-size: 3em;
+    display: block;
+}
+
+
 /* TABLEAU */
 
 table,
 caption {
+    float: left;
     background-color: #3CDB8C;
     border-collapse: collapse;
     /* Supprime les espaces entre les bordures */
@@ -39,6 +67,7 @@ caption {
     font-size: 3em;
     /* Définit la taille du texte à 3 fois la taille de police par défaut */
     text-align: center;
+    width: 100%;
     /* Centre le texte horizontalement (optionnel) */
     /* Ajoute un espace entre le caption et le tableau */
 }
@@ -61,6 +90,14 @@ tr td:first-child {
     text-align: left;
     vertical-align: middle;
     /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    /* Espace entre les éléments */
+    align-items: flex-start;
+    /* Aligner en haut */
 }
 
 aside {
@@ -100,10 +137,7 @@ a {
     text-decoration: none;
 }
 
-article {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /*-----FOOTER-----*/
 
