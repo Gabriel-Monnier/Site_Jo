@@ -3,15 +3,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*-----FOOTER-----*/
+
 footer {
     background-color: black;
-    color: white;
+    color: #ffffff;
     padding-top: 2em;
     padding-bottom: 2.5em;
-    padding-left: 3em;
+
     display: flex;
     justify-content: left;
     align-items: center;
+    width: 100%;
+}
+
+footer>img {
+    padding-left: 3em;
 }
 
 footer>nav {
@@ -23,13 +30,13 @@ footer>nav {
     flex-direction: row;
 }
 
-footer a:visited,
 footer a:hover {
-    color: white;
+    color: lightgray;
 }
 
 footer a {
     text-decoration: none;
+    color: white;
 }
 
 footer ul {
@@ -39,4 +46,12 @@ footer ul {
 
 footer ul:nth-child(2) {
     padding-left: 5em;
+}
+
+.reseau {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
 }
