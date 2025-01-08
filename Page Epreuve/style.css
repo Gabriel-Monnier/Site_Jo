@@ -4,9 +4,50 @@ body{
     margin: 0;
 }
 
-header{
+
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
     background-color: #3CDB8C;
+    padding: 10px 20px;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 50em; /* Espacement entre les deux groupes de menus */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0em 2em;
+}
+
+nav ul:last-child {
+    margin-left: auto; /* Décale le dernier groupe de menus à droite */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+
+
 
 main{
     margin: 0 30px;
@@ -55,12 +96,13 @@ footer > nav {
     flex-direction: row;
 }
 
-footer a:visited, footer a:hover {
-    color: white;
+footer a:hover {
+    color: lightgray;
 }
 
 footer a{
     text-decoration: none;
+    color: white;
 }
 
 footer ul {
