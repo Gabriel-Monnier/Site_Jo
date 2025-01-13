@@ -204,7 +204,7 @@ article img {
     transition: all 0.3s ease-in-out;
 }
 
-article p {
+article span {
     position: absolute;
     top: 50%;
     left: 0;
@@ -222,7 +222,7 @@ article:hover figure img {
     width: 100%;
 }
 
-article:hover p {
+article:hover span {
     opacity: 1;
     left: 100%;
     /* Paragraphe apparaîtra à droite */
