@@ -39,6 +39,20 @@ h2+section {
     justify-content: center;
 }
 
+h2+section article {
+    display: flex;
+    flex-direction: column;
+    /* Pour aligner les éléments verticalement */
+    align-items: center;
+    /* Centre les éléments horizontalement */
+    justify-content: center;
+    /* Centre les éléments verticalement */
+    text-align: center;
+    /* Centre le texte à l'intérieur de l'article */
+    width: 25%;
+    /* Ou une autre largeur si nécessaire */
+}
+
 figcaption {
     font-size: 1.5em;
 }
@@ -51,8 +65,7 @@ section>h2 {
 
 /* TABLEAU */
 
-table,
-caption {
+table {
     float: left;
     background-color: #3CDB8C;
     border-collapse: collapse;
@@ -62,18 +75,23 @@ caption {
 }
 
 caption {
+    background-color: #3CDB8C;
+    width: 70%;
     font-weight: bold;
     /* Rend le texte en gras */
     font-size: 3em;
     /* Définit la taille du texte à 3 fois la taille de police par défaut */
     text-align: center;
-    width: 100%;
     /* Centre le texte horizontalement (optionnel) */
     /* Ajoute un espace entre le caption et le tableau */
 }
 
-td>img {
-    border: solid black 1px;
+
+td img {
+    margin-right: 1.5em;
+    /* Crée un espace entre l'image et le texte */
+    vertical-align: middle;
+    /* Assure que l'image et le texte sont alignés au centre verticalement */
 }
 
 td {
@@ -99,6 +117,13 @@ tr td:first-child {
     align-items: flex-start;
     /* Aligner en haut */
 }
+
+/* fin du tableau */
+
+h2 {
+    font-size: 3.5em;
+}
+
 
 aside {
     width: 15%;
@@ -166,13 +191,13 @@ footer>nav {
     flex-direction: row;
 }
 
-footer a:visited,
 footer a:hover {
-    color: white;
+    color: lightgray;
 }
 
 footer a {
     text-decoration: none;
+    color: white;
 }
 
 footer ul {
@@ -182,4 +207,12 @@ footer ul {
 
 footer ul:nth-child(2) {
     padding-left: 5em;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
 }
