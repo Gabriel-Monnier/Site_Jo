@@ -3,6 +3,45 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h2 {
+    margin: 100px;
+    text-decoration: underline;
+}
+
+/*-----HEADER-----*/
+
+header {
+    background-color: #3CDB8C;
+    background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2em 2em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header>nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50em;
+}
+
+header>nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding-left: 5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
 /*-----MAIN-----*/
 
 section {
@@ -12,16 +51,25 @@ section {
 }
 
 .Sites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: black;
+    margin-bottom: 20px;
     border-radius: 20px;
 }
 
-.Sites figcaption, .Sites h2, .Sites h3{
+.Sites figcaption, .Sites h2, .Sites h3, .Sites p {
     color: white;
 }
 
 .Sites img {
+    object-fit: cover;
     border-radius: 20px ;
+}
+
+.Sites p {
+    margin: 10px;
 }
 
 .Sports {
@@ -94,7 +142,7 @@ footer ul:nth-child(2) {
     padding-left: 5em;
 }
 
-.reseau {
+footer div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

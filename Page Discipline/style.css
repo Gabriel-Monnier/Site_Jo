@@ -53,6 +53,8 @@ h2+section article {
     /* Ou une autre largeur si nécessaire */
 }
 
+
+
 figcaption {
     font-size: 1.5em;
 }
@@ -120,11 +122,27 @@ tr td:first-child {
 
 /* fin du tableau */
 
+p {
+    text-align: justify;
+}
+
+/*pour la demande de s'inscrire a la FFE*/
+div>article+article {
+    margin-top: 8em;
+    margin-left: 4em;
+    display: flex;
+    flex-direction: column;
+    /* Pour aligner les éléments verticalement */
+    align-items: center;
+}
+
+
+
 h2 {
     font-size: 3.5em;
 }
 
-
+/* pour aller aux sous categorie de l'escrime */
 aside {
     width: 15%;
     /* Largeur de l'aside */
@@ -149,8 +167,9 @@ h3 {
     display: block;
 }
 
-p {
-    text-align: justify;
+article>p {
+    font-size: 2em;
+    align-content: center;
 }
 
 a:active,
@@ -162,7 +181,57 @@ a {
     text-decoration: none;
 }
 
+/*sportif médaillé */
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    position: relative;
+    width: 30%;
+    margin: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+article figure {
+    margin: 0;
+}
+
+article img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+article span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease;
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+article:hover figure img {
+    transform: scale(1.2);
+    /* L'image prend plus de place */
+    width: 100%;
+}
+
+article:hover span {
+    opacity: 1;
+    left: 100%;
+    /* Paragraphe apparaîtra à droite */
+}
+
+article:hover figure img {
+    transform: scale(1.1);
+    /* Image plus grande lors du survol */
+}
 
 /*-----FOOTER-----*/
 
