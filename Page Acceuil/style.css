@@ -52,10 +52,11 @@ section {
 
 .Sites {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color: black;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .Sites figcaption, .Sites h2, .Sites h3, .Sites p {
