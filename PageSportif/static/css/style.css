@@ -29,13 +29,25 @@ section > article{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-section > article:first-child{
-    background-color: #33ac91;
-}
+
 h2{
     padding-top: 52;
     font-size: 36px;
 }
+/*-----Menu-----*/
+section:nth-child(1)  > article{
+    background-color: #33ac91;
+}
+section:nth-child(1) > article > p {
+    position: relative;
+}
+section:nth-child(1) > article > p> img:first-child{
+    width: 288px;
+    height: 344px;
+    float: left;
+    margin-bottom: 108px;
+}
+/*-----Biographie Du Sportif-----*/
 section:nth-child(2) > div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -55,6 +67,7 @@ section:nth-child(2) > div > article> h3{
 section:nth-child(2) > div > article> p{
     text-align: center;
 }
+/*-----En Savoir PLUS-----*/
 section:nth-child(6) > div{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -75,7 +88,36 @@ section:nth-child(6) > div > article> p{
     text-align: center;
 }
 
+/*-----HEADER-----*/
 
+header{
+    background-color: #3CDB8C;
+    padding: 2em 2em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50em;
+}
+
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding-left: 5em;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 /*-----FOOTER-----*/
 footer{
     background-color: black;
