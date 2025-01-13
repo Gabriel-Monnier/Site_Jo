@@ -15,15 +15,13 @@ p{
     text-justify: auto;
 }
 
-main > section:nth-child(3){
-    background-color: #3CDB8C;
-}
-
-
 /*-----HEADER-----*/
 
 header{
     background-color: #3CDB8C;
+    background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 2em 2em;
     display: flex;
     justify-content: left;
@@ -51,6 +49,81 @@ header a{
     transition: color 0.3s;
 }
 
+/*-----TABLE-----*/
+table{
+    background-color: #3CDB8C;
+}
+
+/* Styles généraux pour la section */
+.TabMedailles {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #2eaf8f;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* Style du titre Podium */
+caption {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+/* Styles pour la table */
+table {
+    width: 100%;
+    background-color: #3CDB8C;
+    border-radius: 15px;
+    padding: 20px;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+/* Styles pour les cellules */
+td {
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    font-size: 1.2em;
+}
+
+/* Style pour le code du pays */
+td:nth-child(3) {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* Style pour le nom du joueur */
+td:nth-child(4) {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* Alignement des images */
+td img {
+    vertical-align: middle;
+    display: block;
+}
+
+/* Style pour les lignes */
+tr {
+    background-color: white;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Espacement entre les lignes */
+tr + tr {
+    margin-top: 15px;
+}
 
 /*-----FOOTER-----*/
 
