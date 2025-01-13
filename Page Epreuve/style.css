@@ -65,19 +65,16 @@ table{
 }
 
 /* Style du titre Podium */
-caption {
+.TabMedailles h2{
     text-align: center;
     margin-bottom: 20px;
-}
-
-h2{
     font-size: 2em;
     font-weight: bold;
     color: black;
 }
 
 /* Styles pour la table */
-table {
+.TabMedailles table {
     width: 100%;
     background-color: #3CDB8C;
     border-radius: 15px;
@@ -87,7 +84,7 @@ table {
 }
 
 /* Styles pour les cellules */
-td {
+.TabMedailles td {
     padding: 10px;
     display: inline-block;
     color: black;
@@ -95,25 +92,25 @@ td {
 }
 
 /* Style pour le code du pays */
-td:nth-child(3) {
+.TabMedailles td:nth-child(3) {
     font-weight: bold;
     font-size: 1.4em;
 }
 
 /* Style pour le nom du joueur */
-td:nth-child(4) {
+.TabMedailles td:nth-child(4) {
     font-weight: bold;
     font-size: 1.4em;
 }
 
 /* Alignement des images */
-td img {
+.TabMedailles td img {
     vertical-align: middle;
     display: block;
 }
 
 /* Style pour les lignes */
-tr {
+.TabMedailles tr {
     background-color: white;
     margin-bottom: 10px;
     display: block;
@@ -121,7 +118,7 @@ tr {
 }
 
 /* Espacement entre les lignes */
-tr + tr {
+.TabMedailles tr + tr {
     margin-top: 15px;
 }
 
