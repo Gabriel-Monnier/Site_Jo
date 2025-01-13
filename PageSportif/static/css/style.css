@@ -34,18 +34,47 @@ h2{
     padding-top: 52;
     font-size: 36px;
 }
-/*-----Menu-----*/
+/*-----Menu-Top-----*/
 section:nth-child(1)  > article{
     background-color: #33ac91;
 }
-section:nth-child(1) > article > p {
-    position: relative;
-}
-section:nth-child(1) > article > p> img:first-child{
+section:nth-child(1) > article > nav> img:first-child{
     width: 288px;
     height: 344px;
     float: left;
     margin-bottom: 108px;
+}
+section:nth-child(1) > article > nav > img:nth-child(2){
+    width: 76px;
+    height: 44.23px;
+}
+
+/*-------Menu-Bottom-----------*/
+section:nth-child(1)  > nav {
+    padding: 10px 0;
+}
+
+section:nth-child(1)  > nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    justify-content: space-around;
+}
+
+section:nth-child(1)  > nav > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section:nth-child(1)  > nav > ul > li > a { 
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+section:nth-child(1)  > nav > ul > li > a:hover {
+    background-color: #555;
 }
 /*-----Biographie Du Sportif-----*/
 section:nth-child(2) > div{
@@ -92,6 +121,9 @@ section:nth-child(6) > div > article> p{
 
 header{
     background-color: #3CDB8C;
+    background-image: url(../images/Capture\ d’écran_2025-01-13_17-00-15.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 2em 2em;
     display: flex;
     justify-content: left;
