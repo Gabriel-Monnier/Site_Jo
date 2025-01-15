@@ -108,6 +108,51 @@ section:nth-child(2) > div > article> h3{
 section:nth-child(2) > div > article> p{
     text-align: center;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+/* Texte initial */
+button::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+/* Effet de survol - changement de texte */
+button:hover::before {
+    opacity: 0.7;
+}
+
+button:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+button span:nth-child(1){
+    display: block;
+}
+button span:nth-child(2){
+    display: none;
+}
+button:hover span:nth-child(1){
+    display: none;
+}
+button:hover span:nth-child(2){
+    display: block;
+}
+
+
+
 /*-----En Savoir PLUS-----*/
 section:nth-child(6) > div{
     display: grid;
