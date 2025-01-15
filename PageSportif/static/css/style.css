@@ -25,56 +25,58 @@ article{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-section > article{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 h2{
     padding-top: 52;
     font-size: 36px;
 }
-/*-----Menu-Top-----*/
-section:nth-child(1)  > article{
-    background-color: #33ac91;
+/*-------Menu du Site --------*/
+section:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
-section:nth-child(1) > article > nav> img:first-child{
+section:nth-child(1) > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+section:nth-child(1) img {
     width: 288px;
     height: 344px;
-    float: left;
-    margin-bottom: 108px;
-}
-section:nth-child(1) > article > nav > img:nth-child(2){
-    width: 76px;
-    height: 44.23px;
+    padding-right: 10%;
+    margin-left: 0;
 }
 
-/*-------Menu-Bottom-----------*/
-section:nth-child(1)  > nav {
-    padding: 10px 0;
-}
-
-section:nth-child(1)  > nav > ul {
-    list-style-type: none;
+section:nth-child(1) h1 {
+    font-size: 32px;
     margin: 0;
-    padding: 0;
-    text-align:center;
-    justify-content: space-around;
+    font-weight: bold;
 }
 
-section:nth-child(1)  > nav > ul > li {
+section:nth-child(1) div > div:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+section:nth-child(1) div > div p {
+    margin: 5px 0;
+}
+section:nth-child(1) nav{
+    width: 100%;
+}
+section:nth-child(1) nav a {
     display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
     margin-right: 20px;
 }
 
-section:nth-child(1)  > nav > ul > li > a { 
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-}
-
-section:nth-child(1)  > nav > ul > li > a:hover {
-    background-color: #555;
+section:nth-child(1) nav a:hover {
+    
+text-decoration: underline;
 }
 /*-----Biographie Du Sportif-----*/
 section:nth-child(2) > div{
