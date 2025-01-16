@@ -93,11 +93,11 @@ section:nth-child(2) > div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; 
-
+    width: 100%;
 }
 section:nth-child(2) > div > article{
+    background-color: #33ac91;
     width: 100%;
-    max-width: 500px;
     margin: 0;
     padding: 0;
 }
@@ -110,17 +110,18 @@ section:nth-child(2) > div > article> p{
 }
 
 button {
+    width: 100%;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 30px;
     background-color: white;
     color: black;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 1s, transform 1s;
     position: relative;
 }
 
-/* Texte initial */
+
 button::before {
     position: absolute;
     top: 50%;
@@ -129,12 +130,12 @@ button::before {
     transition: opacity 0.3s ease;
 }
 
-/* Effet de survol - changement de texte */
 button:hover::before {
     opacity: 0.7;
 }
 
 button:hover {
+    
     background-color: white;
     transform: scale(1.1);
 }
@@ -160,6 +161,7 @@ section:nth-child(6) > div{
     gap: 20px; 
 }
 section:nth-child(6) > div > article{
+    background-color: #33ac91;
     width: 100%;
     max-width: 250px;
     margin: 0;
@@ -171,7 +173,7 @@ section:nth-child(6) > div > article> h4{
     font-weight: normal;
 } 
 section:nth-child(6) > div > article> p{
-    text-align: center;
+    text-align: justify;
 }
 
 /*-----HEADER-----*/
