@@ -3,14 +3,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-    margin: 100px;
+section+h1 {
+    margin-left: 100px;
     text-decoration: underline;
 }
 
 img {
     object-fit: cover;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
 /*-----HEADER-----*/
@@ -52,8 +52,23 @@ header a {
 section {
     display: flex;
     flex-direction: column;
-    margin: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
+/*-----Momment fort-----*/
+
+article+article {
+    background-color: #33AC91;
+    border-radius: 20px;
+}
+
+article+article>h3 {
+    text-align: center;
+    margin-left: 40px;
+}
+
+/*-----Sites-----*/
 
 .Sites {
     display: flex;
@@ -75,22 +90,42 @@ section {
 .Sites figure {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .Sites img {
+    width: 1500px;
     margin-right: 20px;
 }
+
+/*-----Sports-----*/
 
 .Sports {
     background-color: #3CDB8C;
     border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .Sports img {
     width: 320px;
-    height: auto;
+    height: 200px;
 }
+
+.Sports figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Sports figcaption {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*-----Paralympiques-----*/
 
 .Paralympiques {
     display: flex;
@@ -100,14 +135,22 @@ section {
 }
 
 .Paralympiques img {
-    margin: 40px;
     width: 460px;
     height: auto;
 }
 
-.Paralympiques figcaption {
+.Paralympiques figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 40px;
 }
+
+.Paralympiques figcaption {
+    margin-left: 20px;
+}
+
+/*-----Partenaire-----*/
 
 .Partenaire img {
     width: 550px;
