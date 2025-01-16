@@ -1,9 +1,9 @@
+/*-----CSS GENERAL-----*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
     margin: 0;
 }
-
 
 main{
     margin: 0 30px;
@@ -12,48 +12,102 @@ main{
 }
 
 p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
     text-justify: auto;
 }
 
 /*-----HEADER-----*/
 
-header{
+header {
     background-color: #3CDB8C;
-    background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 2em 2em;
+    padding: 1em 2em; /* Réduit le padding pour les petits écrans */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
     align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de s'empiler sur les petits écrans */
 }
 
-header > nav{
+header > nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap; /* Adapte le menu pour les petits écrans */
+    gap: 1em;
 }
 
-header > nav > ul{
+header > nav > ul {
     list-style: none;
     display: flex;
-    gap: 2em;
-    padding-right: 5em;
+    flex-wrap: wrap; /* Permet au menu de s'adapter en cas de débordement */
+    gap: 1.5em;
+    padding: 0;
+    margin: 0;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: black;
+    background-color: #2eaf8f;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: block; /* Facilite l'adaptation du texte */
+}
+
+header a:hover {
+    background-color: #1a9577;
+    transform: translateY(-2px);
 }
 
 
 
-/*-----PREMIER BLOC-----*/
 
-section:nth-child(1){
+
+/************************************
+*                                   *
+*           PAGE EPREUVE            *
+*                                   *
+************************************/
+
+/*-----PREMIERE DIV-----*/
+
+/* Conteneur principal des sections */
+#Epreuve > div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les sections */
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Sections côte à côte */
+#Epreuve > div:nth-child(1) > section {
+    flex: 1 1 calc(50% - 40px); /* Ajuste la largeur des sections */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    min-width: 300px; /* Largeur minimale pour garder le contenu lisible */
+}
+
+/* Styles des h2 de la div*/
+#Epreuve > div:nth-child(1) h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+/*-----PREMIER BLOC DE LA DIV-----*/
+
+/* Styles généraux pour la section */
+#Epreuve > div:nth-child(1) > section:nth-child(1){
     background-color: #1B17B0;
     color: white;
     border-radius: 15px;
@@ -63,67 +117,55 @@ section:nth-child(1){
 }
 
 
-/*-----DEUXIEME BLOC-----*/
 
-section:nth-child(2){
+/*-----DEUXIEME BLOC DE LA DIV-----*/
+
+/* Styles généraux pour la section */
+#Epreuve > div:nth-child(1) > section:nth-child(2){
     background-color: #3CDB8C;
     color: #000000;
     border-radius: 15px;
     padding: 20px;
     max-width: 800px;
     margin: auto;
+}
+
+
+
+/*-----DEUXIEME DIV-----*/
+
+/* Gestion des éléments de la div */
+#Epreuve > div:nth-child(2){
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    gap: 20px; /* Espacement entre les éléments */
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
 }
 
-section:nth-child(2) article{
-    
-    flex: 1;
-}
-
-section:nth-child(2) h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-section:nth-child(2) p {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-section:nth-child(2) img{
+/* Gestion de l'affichage de l'image dans l'aside */
+#Epreuve > div:nth-child(2) > aside > img{
+    width: 100%; /* Pour une largeur dynamique */
+    height: 100%; /* Adapte l'image à la hauteur du conteneur */
     border-radius: 10px;
-    margin-left: 20px;
-    max-height: 250px;
-    max-width: 250px;
 }
 
 
 
-/*-----TABLE-----*/
-table{
-    background-color: #3CDB8C;
-}
+/*-----TABLE DE LA DEUXIEME DIV-----*/
 
 /* Styles généraux pour la section */
-.TabMedailles {
+#Epreuve > div:nth-child(2) > section{
     width: 90%;
     max-width: 800px;
-    margin: 20px auto;
     background-color: #2eaf8f;
-    padding: 30px;
+    padding: 20px;
+    left: 0;
     border-radius: 20px;
 }
 
 /* Style du titre Podium */
-.TabMedailles h2{
+#Epreuve > div:nth-child(2) > section h2{
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
@@ -132,7 +174,7 @@ table{
 }
 
 /* Styles pour la table */
-.TabMedailles table {
+#Epreuve > div:nth-child(2) > section table {
     width: 100%;
     background-color: #3CDB8C;
     border-radius: 15px;
@@ -142,7 +184,7 @@ table{
 }
 
 /* Styles pour les cellules */
-.TabMedailles td {
+#Epreuve > div:nth-child(2) > section td {
     padding: 10px;
     display: inline-block;
     color: black;
@@ -150,25 +192,25 @@ table{
 }
 
 /* Style pour le code du pays */
-.TabMedailles td:nth-child(3) {
+#Epreuve > div:nth-child(2) > section td:nth-child(3) {
     font-weight: bold;
     font-size: 1.4em;
 }
 
 /* Style pour le nom du joueur */
-.TabMedailles td:nth-child(4) {
+#Epreuve > div:nth-child(2) > section td:nth-child(4) {
     font-weight: bold;
     font-size: 1.4em;
 }
 
 /* Alignement des images */
-.TabMedailles td img {
+#Epreuve > div:nth-child(2) > section td img {
     vertical-align: middle;
     display: block;
 }
 
 /* Style pour les lignes */
-.TabMedailles tr {
+#Epreuve > div:nth-child(2) > section tr {
     background-color: white;
     margin-bottom: 10px;
     display: block;
@@ -176,8 +218,77 @@ table{
 }
 
 /* Espacement entre les lignes */
-.TabMedailles tr + tr {
+#Epreuve > div:nth-child(2) > section tr + tr {
     margin-top: 15px;
+}
+
+
+
+/*-----PLANNING-----*/
+
+/* Styles généraux pour la section */
+#Epreuve > section{
+    background-color: #1B17B0; /* Fond bleu */
+    color: white; /* Texte blanc pour le contraste */
+    border: none; /* Supprime la bordure */
+    border-radius: 12px; /* Coins arrondis */
+    padding: 20px;
+    margin: 20px auto; /* Centre horizontalement */
+    width: 80%; /* Largeur de la section (ajustable) */
+    max-width: 800px; 
+    text-align: center;
+}
+
+/* Style pour le titre principal */
+#Epreuve > section h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Style pour les sous-titres */
+#Epreuve > section h3,
+#Epreuve > section h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    border-bottom: 2px solid #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+}
+
+/* Style de la liste des horaires */
+#Epreuve > section ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style des heures */
+#Epreuve > section ul li strong {
+    font-size: 1.2em;
+    color: #ffcc00;
+    margin-right: 15px;
+    font-family: 'Courier New', Courier, monospace; /* Apparence type "digital" */
+}
+
+/* Texte des descriptions */
+#Epreuve > section ul li {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #d1e4f3; /* Ligne de séparation douce */
+}
+
+/* Changement de fond au survol */
+#Epreuve > section ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
 }
 
 
@@ -233,4 +344,151 @@ footer div{
     justify-content: space-around;
     width: 70%;
     height: 50%;
+}
+
+
+
+/* ----- Responsive CSS ----- */
+
+
+
+/************************************
+*                                   *
+*           PAGE EPREUVE            *
+*                                   *
+************************************/
+
+@media (max-width: 1150px) {
+    #Epreuve > div:nth-child(2) {
+        flex-direction: column; /* Les éléments s'empilent verticalement */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    #Epreuve > div:nth-child(2) > aside > img {
+        width: 80%; /* L'image occupe 80% de la largeur disponible */
+        max-width: 500px; /* Largeur maximale pour éviter qu'elle ne soit trop grande */
+        margin: 20px auto; /* Centre l'image avec un espacement au-dessus et en dessous */
+        display: block;
+        height: auto; /* Préserve le ratio de l'image */
+    }
+
+    #Epreuve > div:nth-child(2) > section {
+        width: 80%; /* La largeur du podium est réduite et centrée */
+        max-width: 800px;
+        margin: 0 auto 20px auto; /* Ajoute un espacement sous le podium */
+    }
+}
+
+/* Version tablettes (entre 768px et 1024px) */
+@media (max-width: 1024px) {
+    #Epreuve {
+        margin: 0 15px; /* Réduction des marges */
+    }
+
+    #Epreuve > div:nth-child(1),
+    #Epreuve > div:nth-child(2) {
+        gap: 15px; /* Espacement réduit */
+    }
+
+    #Epreuve > div:nth-child(1) > section,
+    #Epreuve > div:nth-child(2) > section {
+        flex: 1 1 100%; /* Les sections prennent toute la largeur */
+        margin: 10px 0;
+    }
+
+    #Epreuve > div:nth-child(2) > aside > img {
+        height: auto; /* Adapte l'image à sa largeur */
+    }
+
+    footer {
+        flex-wrap: wrap; /* Les éléments du footer s'empilent */
+    }
+}
+
+/* Version smartphones (moins de 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Les éléments s'empilent sur petits écrans */
+        align-items: center;
+    }
+
+    header > nav {
+        flex-direction: column; /* Le menu s'empile verticalement */
+        align-items: center;
+    }
+
+    header > nav > ul {
+        gap: 2em; /* Réduit l'espacement entre les liens */
+    }
+
+    header a {
+        padding: 10px; /* Réduit le padding pour les petits écrans */
+        width: 100%; /* Les liens occupent toute la largeur disponible */
+    }
+
+    #Epreuve {
+        padding: 10px;
+        margin: 0;
+    }
+
+    #Epreuve > div:nth-child(1),
+    #Epreuve > div:nth-child(2) {
+        flex-direction: column; /* Les éléments s'empilent */
+        align-items: center; /* Centrer le contenu */
+        gap: 10px;
+    }
+
+    #Epreuve > div:nth-child(1) > section,
+    #Epreuve > div:nth-child(2) > section {
+        max-width: 100%; /* Largeur maximale pour s'adapter */
+        margin: 0;
+    }
+
+    #Epreuve > div:nth-child(2) > aside > img {
+        width: 80%; /* Image plus petite pour s'adapter à l'écran */
+        margin: 0 auto;
+    }
+
+    #Epreuve > section ul li {
+        flex-direction: column; /* Les horaires et descriptions s'empilent */
+        align-items: flex-start;
+    }
+
+    footer {
+        flex-direction: column; /* Les éléments du footer s'empilent */
+        text-align: center;
+    }
+
+    footer > nav {
+        border-left: none; /* Supprime la bordure gauche */
+        margin-left: 0; /* Ajuste la marge pour un meilleur alignement */
+        padding-left: 0; /* Supprime le padding lié à la bordure */
+    }
+
+    footer > img {
+        margin-bottom: 10px;
+    }
+
+    footer div {
+        justify-content: center;
+    }
+}
+
+/* Version petits smartphones (moins de 480px) */
+@media (max-width: 480px) {
+    #Epreuve {
+        padding: 5px;
+    }
+
+    #Epreuve > div:nth-child(2) > aside > img {
+        width: 100%; /* Image prend toute la largeur */
+    }
+
+    #Epreuve > section ul li strong {
+        font-size: 1em; /* Taille réduite des horaires */
+    }
+
+    footer ul {
+        line-height: 1.5em; /* Espacement réduit dans le footer */
+    }
 }
