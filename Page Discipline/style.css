@@ -71,6 +71,8 @@ table {
     float: left;
     background-color: #3CDB8C;
     border-collapse: collapse;
+    border-radius: 30px;
+    border-top-left-radius: 0;
     /* Supprime les espaces entre les bordures */
     width: 70%;
     /* Largeur du tableau */
@@ -80,6 +82,8 @@ caption {
     background-color: #3CDB8C;
     width: 70%;
     font-weight: bold;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     /* Rend le texte en gras */
     font-size: 3em;
     /* Définit la taille du texte à 3 fois la taille de police par défaut */
