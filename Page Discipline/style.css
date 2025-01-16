@@ -1,298 +1,749 @@
-main {
-    margin: 8em;
+@media (min-width: 1440px) and (min-height: 1024px){
+    main {
+        margin: 8em;
+    }
+    /*-----HEADER-----*/
+
+    header{
+        background-color: #3CDB8C;
+        background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 2em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header > nav > ul{
+        list-style: none;
+        display: flex;
+        gap: 2em;
+        padding-right: 5em;
+    }
+
+    header a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        /* Aligne verticalement */
+        justify-content: center;
+        /* Centre horizontalement */
+    }
+    
+    .logo {
+        width: 150px;
+        height: auto;
+        margin-right: 10px;
+        display: block;
+        /* Espace entre l'image et le texte */
+    }
+    
+    .logo-text {
+        font-family: Arial, sans-serif;
+        /* Remplacez par une police si besoin */
+        font-size: 6em;
+        font-weight: bold;
+        margin: 0;
+        /* Supprime les marges par défaut */
+    }
+    
+    /* Pour les joueurs d'escrimes*/
+    h2+section {
+        background-color: #33ac91;
+        padding: 2em;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    h2+section article {
+        display: flex;
+        flex-direction: column;
+        /* Pour aligner les éléments verticalement */
+        align-items: center;
+        /* Centre les éléments horizontalement */
+        justify-content: center;
+        /* Centre les éléments verticalement */
+        text-align: center;
+        /* Centre le texte à l'intérieur de l'article */
+        width: 25%;
+        /* Ou une autre largeur si nécessaire */
+    }
+    
+    
+    
+    figcaption {
+        font-size: 1.5em;
+    }
+    
+    section>h2 {
+        font-size: 3em;
+        display: block;
+    }
+    
+    
+    /* TABLEAU */
+    
+    table {
+        float: left;
+        background-color: #3CDB8C;
+        border-collapse: collapse;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        /* Supprime les espaces entre les bordures */
+        width: 70%;
+        /* Largeur du tableau */
+    }
+    
+    caption {
+        background-color: #3CDB8C;
+        width: 70%;
+        font-weight: bold;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        /* Rend le texte en gras */
+        font-size: 3.5em;
+        /* Définit la taille du texte à 3 fois la taille de police par défaut */
+        text-align: center;
+        /* Centre le texte horizontalement (optionnel) */
+        /* Ajoute un espace entre le caption et le tableau */
+    }
+    tr {
+        font-size: 2.25em;
+    }
+    
+    td img {
+        margin-right: 1.5em;
+        /* Crée un espace entre l'image et le texte */
+        vertical-align: middle;
+        /* Assure que l'image et le texte sont alignés au centre verticalement */
+    }
+    
+    td {
+        font-size: 1em;
+        text-align: center;
+        /* Centre horizontalement */
+        vertical-align: middle;
+        /* Centre verticalement */
+        padding: 10px;
+        /* Ajoute de l'espace autour du texte */
+    }
+    
+    tr td:first-child {
+        width: 40%;
+        text-align: left;
+        vertical-align: middle;
+        /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
+    }
+    
+    .table-container {
+        display: flex;
+        justify-content: space-between;
+        /* Espace entre les éléments */
+        align-items: flex-start;
+        /* Aligner en haut */
+    }
+    
+    /* fin du tableau */
+    
+    p {
+        text-align: justify;
+    }
+    
+    /*pour la demande de s'inscrire a la FFE*/
+    div>article+article {
+        margin-top: 8em;
+        margin-left: 4em;
+        display: flex;
+        flex-direction: column;
+        /* Pour aligner les éléments verticalement */
+        align-items: center;
+    }
+    
+    
+    
+    h2 {
+        font-size: 3.5em;
+    }
+    
+    /* pour aller aux sous categorie de l'escrime */
+    aside {
+        width: 18%;
+        /* Largeur de l'aside */
+        border-radius: 30px;
+        padding-right: 1em;
+        padding-left: 1em;
+        background-color: #33ac91;
+        float: right;
+        /* Place l'aside à droite */
+        margin-left: 10px;
+        /* Ajoute un petit espace entre le tableau et l'aside */
+        font-size: 1em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li > a, li > p {
+        font-size: 2em;
+    }
+    
+    li > p {
+        padding-left: 1em;
+    }
+    
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 1em;
+        margin-bottom: 3em;
+    }
+
+    div > p {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 3em;
+        display: block;
+    }
+    
+    article>p {
+        font-size: 2em;
+        align-content: center;
+    }
+    
+    a:active,
+    a:hover,
+    a:visited,
+    a:focus,
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    /*sportif médaillé */
+    
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 30px;
+    }
+    
+    article {
+        position: relative;
+        width: 100%;
+        margin: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    article figure {
+        margin: 0;
+    }
+    
+    article img {
+        max-width: 70%;
+        transition: all 0.7s ease-in-out;
+    }
+    
+    article span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.5s ease, left 0.5s ease;
+        width: 70%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 1;
+    }
+    
+    article:hover figure img {
+        transform: scale(1.2);
+        /* L'image prend plus de place */
+        width: 100%;
+    }
+    
+    article:hover span {
+        opacity: 1;
+        left: 70%;
+        top: 15%;
+        font-size: 2em;
+    
+        /* Paragraphe apparaîtra à droite */
+    }
+    
+    figcaption {
+        font-size: 2.5em;
+    }
+
+    article:hover figcaption {
+        display: none;
+    }
+    /*-----FOOTER-----*/
+    
+    footer {
+        background-color: black;
+        color: #ffffff;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+    
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+    }
+    
+    footer>img {
+        padding-left: 3em;
+    }
+    
+    footer>nav {
+        border-left: 1px solid #ffffff;
+        margin-left: 3em;
+        padding-left: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    footer a:hover {
+        color: lightgray;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    footer ul {
+        list-style: none;
+        line-height: 2em;
+    }
+    
+    footer ul:nth-child(2) {
+        padding-left: 5em;
+    }
+    
+    footer div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 70%;
+        height: 50%;
+    }
 }
 
 
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    /* Aligne verticalement */
-    justify-content: center;
-    /* Centre horizontalement */
+
+
+@media (max-width: 1439px) and (max-height: 1023px){
+    main {
+        margin: 8em;
+    }
+
+    /*-----HEADER-----*/
+
+    header{
+        background-color: #3CDB8C;
+        background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 2em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header > nav > ul{
+        list-style: none;
+        display: flex;
+        gap: 2em;
+        padding-right: 5em;
+    }
+
+    header a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    
+    img {
+        display: none;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        /* Aligne verticalement */
+        justify-content: center;
+        /* Centre horizontalement */
+    }
+    
+    .logo {
+        width: 150px;
+        height: auto;
+        margin-right: 10px;
+        /* Espace entre l'image et le texte */
+    }
+    
+    .logo-text {
+        font-family: Arial, sans-serif;
+        /* Remplacez par une police si besoin */
+        font-size: 6em;
+        font-weight: bold;
+        margin: 0;
+        /* Supprime les marges par défaut */
+    }
+    
+    /* Pour les joueurs d'escrimes*/
+    h2+section {
+        background-color: #33ac91;
+        padding: 2em;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    h2+section article {
+        display: flex;
+        flex-direction: column;
+        /* Pour aligner les éléments verticalement */
+        align-items: center;
+        /* Centre les éléments horizontalement */
+        justify-content: center;
+        /* Centre les éléments verticalement */
+        text-align: center;
+        /* Centre le texte à l'intérieur de l'article */
+        width: 25%;
+        /* Ou une autre largeur si nécessaire */
+    }
+    
+    
+    
+    figcaption {
+        font-size: 1.5em;
+    }
+    
+    section>h2 {
+        font-size: 3em;
+        display: block;
+    }
+    
+    
+    /* TABLEAU */
+    
+    table {
+        float: left;
+        background-color: #3CDB8C;
+        border-collapse: collapse;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        /* Supprime les espaces entre les bordures */
+        width: 70%;
+        /* Largeur du tableau */
+    }
+    
+    caption {
+        background-color: #3CDB8C;
+        width: 70%;
+        font-weight: bold;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        /* Rend le texte en gras */
+        font-size: 3em;
+        /* Définit la taille du texte à 3 fois la taille de police par défaut */
+        text-align: center;
+        /* Centre le texte horizontalement (optionnel) */
+        /* Ajoute un espace entre le caption et le tableau */
+    }
+    tr {
+        font-size: 1.5em;
+    }
+    
+    td img {
+        margin-right: 0.6em;
+        /* Crée un espace entre l'image et le texte */
+        vertical-align: middle;
+        /* Assure que l'image et le texte sont alignés au centre verticalement */
+        display: inline;
+        width: 2em;
+        height: auto;
+    }
+    
+    td {
+        font-size: 1em;
+        text-align: center;
+        /* Centre horizontalement */
+        vertical-align: middle;
+        /* Centre verticalement */
+        padding: 10px;
+        /* Ajoute de l'espace autour du texte */
+    }
+    
+    tr td:first-child {
+        width: 40%;
+        text-align: left;
+        vertical-align: middle;
+        /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
+    }
+    
+    .table-container {
+        display: flex;
+        justify-content: space-between;
+        /* Espace entre les éléments */
+        align-items: flex-start;
+        /* Aligner en haut */
+    }
+    
+    /* fin du tableau */
+    
+    p {
+        text-align: justify;
+    }
+    
+    /*pour la demande de s'inscrire a la FFE*/
+    div>article+article {
+        margin-top: 8em;
+        margin-left: 4em;
+        display: flex;
+        flex-direction: column;
+        /* Pour aligner les éléments verticalement */
+        align-items: center;
+    }
+    
+    
+    
+    h2 {
+        font-size: 3.5em;
+    }
+    
+    /* pour aller aux sous categorie de l'escrime */
+    aside {
+        width: 18%;
+        /* Largeur de l'aside */
+        border-radius: 30px;
+        padding-right: 1em;
+        padding-left: 1em;
+        background-color: #33ac91;
+        float: right;
+        /* Place l'aside à droite */
+        margin-left: 10px;
+        /* Ajoute un petit espace entre le tableau et l'aside */
+        font-size: 0.60em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li > a, li > p {
+        font-size: 2em;
+    }
+    
+    li > p {
+        padding-left: 1em;
+    }
+    
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 1em;
+        margin-bottom: 3em;
+    }
+
+    div > p {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 3em;
+        display: block;
+    }
+
+    /*article du pictogramme*/
+    div >article {
+        display: none;
+    }
+
+    /* image de la FIE*/
+    a > img {
+        display: block;
+        width: 33em;
+        height: auto;
+    }
+    
+    article>p {
+        font-size: 2em;
+        align-content: center;
+    }
+    
+    a:active,
+    a:hover,
+    a:visited,
+    a:focus,
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    /*sportif médaillé */
+    
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 30px;
+    }
+    
+    article {
+        position: relative;
+        width: 100%;
+        margin: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    article figure {
+        margin: 0;
+    }
+    
+    figure img {
+        display: block;
+        max-width: 70%;
+        transition: all 0.7s ease-in-out;
+    }
+
+    figure + img {
+        display: block;
+        width: 7em;
+        height: auto;
+    }
+    
+    article span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.5s ease, left 0.5s ease;
+        width: 70%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 1;
+    }
+    
+    article:hover figure img {
+        transform: scale(1.2);
+        /* L'image prend plus de place */
+        width: 100%;
+    }
+    
+    article:hover span {
+        opacity: 1;
+        left: 70%;
+        top: 15%;
+        font-size: 1.25em;
+    
+        /* Paragraphe apparaîtra à droite */
+    }
+    
+    figcaption {
+        font-size: 2.5em;
+    }
+
+    article:hover figcaption {
+        display: none;
+    }
+    /*-----FOOTER-----*/
+    
+    footer {
+        background-color: black;
+        color: #ffffff;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+    
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+    }
+    
+    footer>img {
+        padding-left: 3em;
+        display: block;
+    }
+    
+    footer>nav {
+        border-left: 1px solid #ffffff;
+        margin-left: 3em;
+        padding-left: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    footer a:hover {
+        color: lightgray;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    footer ul {
+        list-style: none;
+        line-height: 2em;
+    }
+    
+    footer ul:nth-child(2) {
+        padding-left: 5em;
+    }
+    
+    footer div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 70%;
+        height: 50%;
+    }
+    li > a > img {
+        display: block;
+        width: 1em;
+        height: auto;
+    }
 }
 
-.logo {
-    width: 150px;
-    height: auto;
-    margin-right: 10px;
-    /* Espace entre l'image et le texte */
-}
-
-.logo-text {
-    font-family: Arial, sans-serif;
-    /* Remplacez par une police si besoin */
-    font-size: 6em;
-    font-weight: bold;
-    margin: 0;
-    /* Supprime les marges par défaut */
-}
-
-/* Pour les joueurs d'escrimes*/
-h2+section {
-    background-color: #33ac91;
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-h2+section article {
-    display: flex;
-    flex-direction: column;
-    /* Pour aligner les éléments verticalement */
-    align-items: center;
-    /* Centre les éléments horizontalement */
-    justify-content: center;
-    /* Centre les éléments verticalement */
-    text-align: center;
-    /* Centre le texte à l'intérieur de l'article */
-    width: 25%;
-    /* Ou une autre largeur si nécessaire */
-}
-
-
-
-figcaption {
-    font-size: 1.5em;
-}
-
-section>h2 {
-    font-size: 3em;
-    display: block;
-}
-
-
-/* TABLEAU */
-
-table {
-    float: left;
-    background-color: #3CDB8C;
-    border-collapse: collapse;
-    border-radius: 30px;
-    border-top-left-radius: 0;
-    /* Supprime les espaces entre les bordures */
-    width: 70%;
-    /* Largeur du tableau */
-}
-
-caption {
-    background-color: #3CDB8C;
-    width: 70%;
-    font-weight: bold;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    /* Rend le texte en gras */
-    font-size: 3em;
-    /* Définit la taille du texte à 3 fois la taille de police par défaut */
-    text-align: center;
-    /* Centre le texte horizontalement (optionnel) */
-    /* Ajoute un espace entre le caption et le tableau */
-}
-
-
-td img {
-    margin-right: 1.5em;
-    /* Crée un espace entre l'image et le texte */
-    vertical-align: middle;
-    /* Assure que l'image et le texte sont alignés au centre verticalement */
-}
-
-td {
-    text-align: center;
-    /* Centre horizontalement */
-    vertical-align: middle;
-    /* Centre verticalement */
-    padding: 10px;
-    /* Ajoute de l'espace autour du texte */
-}
-
-tr td:first-child {
-    width: 40%;
-    text-align: left;
-    vertical-align: middle;
-    /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
-}
-
-.table-container {
-    display: flex;
-    justify-content: space-between;
-    /* Espace entre les éléments */
-    align-items: flex-start;
-    /* Aligner en haut */
-}
-
-/* fin du tableau */
-
-p {
-    text-align: justify;
-}
-
-/*pour la demande de s'inscrire a la FFE*/
-div>article+article {
-    margin-top: 8em;
-    margin-left: 4em;
-    display: flex;
-    flex-direction: column;
-    /* Pour aligner les éléments verticalement */
-    align-items: center;
-}
-
-
-
-h2 {
-    font-size: 3.5em;
-}
-
-/* pour aller aux sous categorie de l'escrime */
-aside {
-    width: 15%;
-    /* Largeur de l'aside */
-    background-color: #33ac91;
-    float: right;
-    /* Place l'aside à droite */
-    margin-left: 10px;
-    /* Ajoute un petit espace entre le tableau et l'aside */
-}
-
-
-div {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 1em;
-    margin-bottom: 3em;
-}
-
-h3 {
-    display: block;
-}
-
-article>p {
-    font-size: 2em;
-    align-content: center;
-}
-
-a:active,
-a:hover,
-a:visited,
-a:focus,
-a {
-    color: black;
-    text-decoration: none;
-}
-
-/*sportif médaillé */
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-article {
-    position: relative;
-    width: 100%;
-    margin: 15px;
-    transition: all 0.3s ease-in-out;
-}
-
-article figure {
-    margin: 0;
-}
-
-article img {
-    max-width: 70%;
-    transition: all 0.3s ease-in-out;
-}
-
-article span {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease, left 0.3s ease;
-    width: 70%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-}
-
-article:hover figure img {
-    transform: scale(1.2);
-    /* L'image prend plus de place */
-    width: 100%;
-}
-
-article:hover span {
-    opacity: 1;
-    left: 70%;
-    top: 15%;
-
-    /* Paragraphe apparaîtra à droite */
-}
-
-article:hover figcaption {
-    display: none;
-}
-
-article:hover figure img {
-    transform: scale(1.1);
-    /* Image plus grande lors du survol */
-}
-
-/*-----FOOTER-----*/
-
-footer {
-    background-color: black;
-    color: #ffffff;
-    padding-top: 2em;
-    padding-bottom: 2.5em;
-
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 100%;
-}
-
-footer>img {
-    padding-left: 3em;
-}
-
-footer>nav {
-    border-left: 1px solid #ffffff;
-    margin-left: 3em;
-    padding-left: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-footer a:hover {
-    color: lightgray;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer ul {
-    list-style: none;
-    line-height: 2em;
-}
-
-footer ul:nth-child(2) {
-    padding-left: 5em;
-}
-
-footer div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 70%;
-    height: 50%;
-}
