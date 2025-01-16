@@ -8,6 +8,11 @@ h2 {
     text-decoration: underline;
 }
 
+img {
+    object-fit: cover;
+    border-radius: 20px ;
+}
+
 /*-----HEADER-----*/
 
 header {
@@ -63,13 +68,18 @@ section {
     color: white;
 }
 
-.Sites img {
-    object-fit: cover;
-    border-radius: 20px ;
-}
-
 .Sites p {
     margin: 10px;
+}
+
+.Sites figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Sites img {
+    margin-right: 20px;
 }
 
 .Sports {
@@ -83,13 +93,20 @@ section {
 }
 
 .Paralympiques {
+    display: flex;
+    flex-direction: column;
     background-color: #33AC91;
     border-radius: 20px;
 }
 
 .Paralympiques img {
+    margin: 40px;
     width: 460px;
     height: auto;
+}
+
+.Paralympiques figcaption {
+    margin-left: 40px;
 }
 
 .Partenaire img {
