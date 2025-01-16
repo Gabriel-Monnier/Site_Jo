@@ -190,7 +190,7 @@ section {
 
 article {
     position: relative;
-    width: 30%;
+    width: 100%;
     margin: 15px;
     transition: all 0.3s ease-in-out;
 }
@@ -214,6 +214,7 @@ article span {
     width: 60%;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
 }
 
 article:hover figure img {
@@ -224,12 +225,22 @@ article:hover figure img {
 
 article:hover span {
     opacity: 1;
-    left: 100%;
+    top: 110%;
+    left: 5%;
+
     /* Paragraphe apparaîtra à droite */
 }
 
+article:hover figcaption {
+    display: none;
+}
+
+article:hover figure+img {
+    display: none;
+}
+
 article:hover figure img {
-    transform: scale(1.1);
+    transform: scale(0.9);
     /* Image plus grande lors du survol */
 }
 
