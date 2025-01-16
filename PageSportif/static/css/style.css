@@ -173,7 +173,7 @@ section:nth-child(6) > div > article> h4{
     font-weight: normal;
 } 
 section:nth-child(6) > div > article> p{
-    text-align: justify;
+    text-align: center;
 }
 
 /*-----HEADER-----*/
