@@ -25,27 +25,68 @@ article{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-section > article{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 h2{
     padding-top: 52;
     font-size: 36px;
 }
-/*-----Menu-----*/
-section:nth-child(1)  > article{
-    background-color: #33ac91;
+/*-------Menu du Site --------*/
+section:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
-section:nth-child(1) > article > p {
-    position: relative;
+section:nth-child(1) > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
 }
-section:nth-child(1) > article > p> img:first-child{
+section:nth-child(1) img {
     width: 288px;
     height: 344px;
-    float: left;
-    margin-bottom: 108px;
+    padding-right: 10%;
+    margin-left: 0;
+}
+section:nth-child(1) h1 {
+    font-size: 54px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+section:nth-child(1) div div  img:first-child{
+    width: 76px;
+    height: 44.23px;
+}
+section:nth-child(1) div > div:nth-child(2) {
+    margin-top: 10px;
+}
+section:nth-child(1) div div div {
+    width: 750px;
+    height: 250px;
+    font-size: 40px;
+}
+
+section:nth-child(1) div > div >  p {
+    margin: 5px 0;
+}
+section:nth-child(1) nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section:nth-child(1) nav a {
+
+    margin-top: 10px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    align-items: center;
+}
+
+section:nth-child(1) nav a:hover {
+    text-decoration: underline;
 }
 /*-----Biographie Du Sportif-----*/
 section:nth-child(2) > div{
@@ -67,6 +108,51 @@ section:nth-child(2) > div > article> h3{
 section:nth-child(2) > div > article> p{
     text-align: center;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+/* Texte initial */
+button::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+/* Effet de survol - changement de texte */
+button:hover::before {
+    opacity: 0.7;
+}
+
+button:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+button span:nth-child(1){
+    display: block;
+}
+button span:nth-child(2){
+    display: none;
+}
+button:hover span:nth-child(1){
+    display: none;
+}
+button:hover span:nth-child(2){
+    display: block;
+}
+
+
+
 /*-----En Savoir PLUS-----*/
 section:nth-child(6) > div{
     display: grid;
@@ -92,6 +178,9 @@ section:nth-child(6) > div > article> p{
 
 header{
     background-color: #3CDB8C;
+    background-image: url(../images/Capture\ d’écran_2025-01-13_17-00-15.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 2em 2em;
     display: flex;
     justify-content: left;

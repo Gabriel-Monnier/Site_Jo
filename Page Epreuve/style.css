@@ -21,10 +21,11 @@ header{
     background-color: #3CDB8C;
     background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     padding: 2em 2em;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -32,14 +33,13 @@ header > nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50em;
 }
 
 header > nav > ul{
     list-style: none;
     display: flex;
     gap: 2em;
-    padding-left: 5em;
+    padding-right: 5em;
 }
 
 header a{
@@ -48,6 +48,64 @@ header a{
     font-weight: bold;
     transition: color 0.3s;
 }
+
+
+
+/*-----PREMIER BLOC-----*/
+
+section:nth-child(1){
+    background-color: #1B17B0;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/*-----DEUXIEME BLOC-----*/
+
+section:nth-child(2){
+    background-color: #3CDB8C;
+    color: #000000;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:nth-child(2) article{
+    
+    flex: 1;
+}
+
+section:nth-child(2) h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+section:nth-child(2) p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+section:nth-child(2) img{
+    border-radius: 10px;
+    margin-left: 20px;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+
 
 /*-----TABLE-----*/
 table{
@@ -65,19 +123,16 @@ table{
 }
 
 /* Style du titre Podium */
-caption {
+.TabMedailles h2{
     text-align: center;
     margin-bottom: 20px;
-}
-
-h2{
     font-size: 2em;
     font-weight: bold;
     color: black;
 }
 
 /* Styles pour la table */
-table {
+.TabMedailles table {
     width: 100%;
     background-color: #3CDB8C;
     border-radius: 15px;
@@ -87,7 +142,7 @@ table {
 }
 
 /* Styles pour les cellules */
-td {
+.TabMedailles td {
     padding: 10px;
     display: inline-block;
     color: black;
@@ -95,25 +150,25 @@ td {
 }
 
 /* Style pour le code du pays */
-td:nth-child(3) {
+.TabMedailles td:nth-child(3) {
     font-weight: bold;
     font-size: 1.4em;
 }
 
 /* Style pour le nom du joueur */
-td:nth-child(4) {
+.TabMedailles td:nth-child(4) {
     font-weight: bold;
     font-size: 1.4em;
 }
 
 /* Alignement des images */
-td img {
+.TabMedailles td img {
     vertical-align: middle;
     display: block;
 }
 
 /* Style pour les lignes */
-tr {
+.TabMedailles tr {
     background-color: white;
     margin-bottom: 10px;
     display: block;
@@ -121,9 +176,11 @@ tr {
 }
 
 /* Espacement entre les lignes */
-tr + tr {
+.TabMedailles tr + tr {
     margin-top: 15px;
 }
+
+
 
 /*-----FOOTER-----*/
 
