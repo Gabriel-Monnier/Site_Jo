@@ -1,10 +1,11 @@
-@media (min-width: 1440px) and (min-height: 1024px){
+@media (min-width: 1440px) and (min-height: 1024px) {
     main {
         margin: 3em 8em;
     }
+
     /*-----HEADER-----*/
 
-    header{
+    header {
         background-color: #3CDB8C;
         background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
         background-repeat: no-repeat;
@@ -16,20 +17,20 @@
         align-items: center;
     }
 
-    header > nav{
+    header>nav {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
-    header > nav > ul{
+    header>nav>ul {
         list-style: none;
         display: flex;
         gap: 2em;
         padding-right: 5em;
     }
 
-    header a{
+    header a {
         text-decoration: none;
         color: black;
         font-weight: bold;
@@ -43,7 +44,7 @@
         justify-content: center;
         /* Centre horizontalement */
     }
-    
+
     .logo {
         width: 150px;
         height: auto;
@@ -51,7 +52,7 @@
         display: block;
         /* Espace entre l'image et le texte */
     }
-    
+
     .logo-text {
         font-family: Arial, sans-serif;
         /* Remplacez par une police si besoin */
@@ -60,7 +61,7 @@
         margin: 0;
         /* Supprime les marges par défaut */
     }
-    
+
     /* Pour les joueurs d'escrimes*/
     h2+section {
         background-color: #33ac91;
@@ -71,7 +72,7 @@
         flex-direction: row;
         justify-content: center;
     }
-    
+
     h2+section article {
         display: flex;
         flex-direction: column;
@@ -85,21 +86,21 @@
         width: 25%;
         /* Ou une autre largeur si nécessaire */
     }
-    
-    
-    
+
+
+
     figcaption {
         font-size: 1.5em;
     }
-    
+
     section>h2 {
         font-size: 3em;
         display: block;
     }
-    
-    
+
+
     /* TABLEAU */
-    
+
     table {
         float: left;
         background-color: #3CDB8C;
@@ -110,7 +111,7 @@
         width: 70%;
         /* Largeur du tableau */
     }
-    
+
     caption {
         background-color: #3CDB8C;
         width: 70%;
@@ -124,17 +125,18 @@
         /* Centre le texte horizontalement (optionnel) */
         /* Ajoute un espace entre le caption et le tableau */
     }
+
     tr {
         font-size: 2.25em;
     }
-    
+
     td img {
         margin-right: 1.5em;
         /* Crée un espace entre l'image et le texte */
         vertical-align: middle;
         /* Assure que l'image et le texte sont alignés au centre verticalement */
     }
-    
+
     td {
         font-size: 1em;
         text-align: center;
@@ -144,14 +146,14 @@
         padding: 10px;
         /* Ajoute de l'espace autour du texte */
     }
-    
+
     tr td:first-child {
         width: 40%;
         text-align: left;
         vertical-align: middle;
         /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
     }
-    
+
     .table-container {
         display: flex;
         justify-content: space-between;
@@ -159,13 +161,13 @@
         align-items: flex-start;
         /* Aligner en haut */
     }
-    
+
     /* fin du tableau */
-    
+
     p {
         text-align: justify;
     }
-    
+
     /*pour la demande de s'inscrire a la FFE*/
     div>article+article {
         margin-top: 8em;
@@ -175,13 +177,13 @@
         /* Pour aligner les éléments verticalement */
         align-items: center;
     }
-    
-    
-    
+
+
+
     h2 {
         font-size: 3.5em;
     }
-    
+
     /* pour aller aux sous categorie de l'escrime */
     aside {
         width: 18%;
@@ -201,14 +203,15 @@
         list-style: none;
     }
 
-    li > a, li > p {
+    li>a,
+    li>p {
         font-size: 2em;
     }
-    
-    li > p {
+
+    li>p {
         padding-left: 1em;
     }
-    
+
     div {
         display: flex;
         flex-direction: row;
@@ -218,20 +221,20 @@
         margin-bottom: 3em;
     }
 
-    div > p {
+    div>p {
         font-size: 2em;
     }
-    
+
     h3 {
         font-size: 3em;
         display: block;
     }
-    
+
     article>p {
         font-size: 2em;
         align-content: center;
     }
-    
+
     a:active,
     a:hover,
     a:visited,
@@ -240,31 +243,31 @@
         color: black;
         text-decoration: none;
     }
-    
+
     /*sportif médaillé */
-    
+
     section {
         display: flex;
         flex-wrap: wrap;
         border-radius: 30px;
     }
-    
+
     article {
         position: relative;
         width: 100%;
         margin: 15px;
         transition: all 0.3s ease-in-out;
     }
-    
+
     article figure {
         margin: 0;
     }
-    
+
     article img {
         max-width: 70%;
         transition: all 0.7s ease-in-out;
     }
-    
+
     article span {
         position: absolute;
         top: 50%;
@@ -277,22 +280,22 @@
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 1;
     }
-    
+
     article:hover figure img {
         transform: scale(1.2);
         /* L'image prend plus de place */
         width: 100%;
     }
-    
+
     article:hover span {
         opacity: 1;
         left: 70%;
         top: 15%;
         font-size: 2em;
-    
+
         /* Paragraphe apparaîtra à droite */
     }
-    
+
     figcaption {
         font-size: 2.5em;
     }
@@ -300,24 +303,25 @@
     article:hover figcaption {
         display: none;
     }
+
     /*-----FOOTER-----*/
-    
+
     footer {
         background-color: black;
         color: #ffffff;
         padding-top: 2em;
         padding-bottom: 2.5em;
-    
+
         display: flex;
         justify-content: left;
         align-items: center;
         width: 100%;
     }
-    
+
     footer>img {
         padding-left: 3em;
     }
-    
+
     footer>nav {
         border-left: 1px solid #ffffff;
         margin-left: 3em;
@@ -326,25 +330,25 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
-    
+
     footer a:hover {
         color: lightgray;
     }
-    
+
     footer a {
         text-decoration: none;
         color: white;
     }
-    
+
     footer ul {
         list-style: none;
         line-height: 2em;
     }
-    
+
     footer ul:nth-child(2) {
         padding-left: 5em;
     }
-    
+
     footer div {
         display: flex;
         flex-wrap: wrap;
@@ -358,14 +362,14 @@
 
 
 
-@media (max-width: 1439px) and (max-height: 1023px){
+@media (max-width: 1439px) and (max-height: 1023px) {
     main {
         margin: 3em 8em;
     }
 
     /*-----HEADER-----*/
 
-    header{
+    header {
         background-color: #3CDB8C;
         background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
         background-repeat: no-repeat;
@@ -377,30 +381,31 @@
         align-items: center;
     }
 
-    header > nav{
+    header>nav {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
-    header > nav > ul{
+    header>nav>ul {
         list-style: none;
         display: flex;
         gap: 2em;
         padding-right: 5em;
     }
 
-    header a{
+    header a {
         text-decoration: none;
         color: black;
         font-weight: bold;
         transition: color 0.3s;
     }
 
-    
+
     img {
         display: none;
     }
+
     /*Logo du début + Titre Escrime*/
     .logo-container {
         display: flex;
@@ -409,7 +414,7 @@
         justify-content: center;
         /* Centre horizontalement */
     }
-    
+
     .logo {
         width: 150px;
         height: auto;
@@ -417,7 +422,7 @@
         display: block;
         /* Espace entre l'image et le texte */
     }
-    
+
     .logo-text {
         font-family: Arial, sans-serif;
         /* Remplacez par une police si besoin */
@@ -426,7 +431,7 @@
         margin: 0;
         /* Supprime les marges par défaut */
     }
-    
+
     /* Pour les joueurs d'escrimes*/
     h2+section {
         background-color: #33ac91;
@@ -437,7 +442,7 @@
         flex-direction: row;
         justify-content: center;
     }
-    
+
     h2+section article {
         display: flex;
         flex-direction: column;
@@ -451,21 +456,21 @@
         width: 25%;
         /* Ou une autre largeur si nécessaire */
     }
-    
-    
-    
+
+
+
     figcaption {
         font-size: 1.5em;
     }
-    
+
     section>h2 {
         font-size: 3em;
         display: block;
     }
-    
-    
+
+
     /* TABLEAU */
-    
+
     table {
         float: left;
         background-color: #3CDB8C;
@@ -476,7 +481,7 @@
         width: 70%;
         /* Largeur du tableau */
     }
-    
+
     caption {
         background-color: #3CDB8C;
         width: 70%;
@@ -490,10 +495,11 @@
         /* Centre le texte horizontalement (optionnel) */
         /* Ajoute un espace entre le caption et le tableau */
     }
+
     tr {
         font-size: 1.5em;
     }
-    
+
     td img {
         margin-right: 0.6em;
         /* Crée un espace entre l'image et le texte */
@@ -503,7 +509,7 @@
         width: 2em;
         height: auto;
     }
-    
+
     td {
         font-size: 1em;
         text-align: center;
@@ -513,14 +519,14 @@
         padding: 10px;
         /* Ajoute de l'espace autour du texte */
     }
-    
+
     tr td:first-child {
         width: 40%;
         text-align: left;
         vertical-align: middle;
         /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
     }
-    
+
     .table-container {
         display: flex;
         justify-content: space-between;
@@ -528,13 +534,13 @@
         align-items: flex-start;
         /* Aligner en haut */
     }
-    
+
     /* fin du tableau */
-    
+
     p {
         text-align: justify;
     }
-    
+
     /*pour la demande de s'inscrire a la FFE*/
     div>article+article {
         margin-top: 8em;
@@ -544,13 +550,13 @@
         /* Pour aligner les éléments verticalement */
         align-items: center;
     }
-    
-    
-    
+
+
+
     h2 {
         font-size: 3.5em;
     }
-    
+
     /* pour aller aux sous categorie de l'escrime */
     aside {
         width: 18%;
@@ -570,14 +576,15 @@
         list-style: none;
     }
 
-    li > a, li > p {
+    li>a,
+    li>p {
         font-size: 2em;
     }
-    
-    li > p {
+
+    li>p {
         padding-left: 1em;
     }
-    
+
     div {
         display: flex;
         flex-direction: row;
@@ -587,32 +594,32 @@
         margin-bottom: 3em;
     }
 
-    div > p {
-        font-size: 2em;
+    div>p {
+        font-size: 1.25em;
     }
-    
+
     h3 {
         font-size: 3em;
         display: block;
     }
 
     /*article du pictogramme*/
-    div >article {
+    div>article {
         display: none;
     }
 
     /* image de la FIE*/
-    a > img {
+    a>img {
         display: block;
         width: 33em;
         height: auto;
     }
-    
+
     article>p {
         font-size: 2em;
         align-content: center;
     }
-    
+
     a:active,
     a:hover,
     a:visited,
@@ -621,38 +628,38 @@
         color: black;
         text-decoration: none;
     }
-    
+
     /*sportif médaillé */
-    
+
     section {
         display: flex;
         flex-wrap: wrap;
         border-radius: 30px;
     }
-    
+
     article {
         position: relative;
         width: 100%;
         margin: 15px;
         transition: all 0.3s ease-in-out;
     }
-    
+
     article figure {
         margin: 0;
     }
-    
+
     figure img {
         display: block;
         max-width: 70%;
         transition: all 0.7s ease-in-out;
     }
 
-    figure + img {
+    figure+img {
         display: block;
         width: 7em;
         height: auto;
     }
-    
+
     article span {
         position: absolute;
         top: 50%;
@@ -665,48 +672,49 @@
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 1;
     }
-    
+
     article:hover figure img {
         transform: scale(1.2);
         /* L'image prend plus de place */
         width: 100%;
     }
-    
+
     article:hover span {
         opacity: 1;
         left: 70%;
         top: 15%;
         font-size: 1.25em;
-    
+
         /* Paragraphe apparaîtra à droite */
     }
-    
+
     figcaption {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     article:hover figcaption {
         display: none;
     }
+
     /*-----FOOTER-----*/
-    
+
     footer {
         background-color: black;
         color: #ffffff;
         padding-top: 2em;
         padding-bottom: 2.5em;
-    
+
         display: flex;
         justify-content: left;
         align-items: center;
         width: 100%;
     }
-    
+
     footer>img {
         padding-left: 3em;
         display: block;
     }
-    
+
     footer>nav {
         border-left: 1px solid #ffffff;
         margin-left: 3em;
@@ -715,25 +723,25 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
-    
+
     footer a:hover {
         color: lightgray;
     }
-    
+
     footer a {
         text-decoration: none;
         color: white;
     }
-    
+
     footer ul {
         list-style: none;
         line-height: 2em;
     }
-    
+
     footer ul:nth-child(2) {
         padding-left: 5em;
     }
-    
+
     footer div {
         display: flex;
         flex-wrap: wrap;
@@ -741,10 +749,10 @@
         width: 70%;
         height: 50%;
     }
-    li > a > img {
+
+    li>a>img {
         display: block;
         width: 1em;
         height: auto;
     }
 }
-
