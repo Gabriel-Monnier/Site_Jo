@@ -157,6 +157,7 @@ header a:hover {
 /* Styles généraux pour la section */
 #Epreuve > div:nth-child(2) > section{
     width: 90%;
+    height: auto;
     max-width: 800px;
     background-color: #2eaf8f;
     padding: 20px;
@@ -307,7 +308,7 @@ footer{
     width: 100%;
 }
 
-footer > img {
+footer > a > img {
     padding-left: 3em;
 }
 
@@ -465,7 +466,7 @@ footer div{
         padding-left: 0; /* Supprime le padding lié à la bordure */
     }
 
-    footer > img {
+    footer > a > img {
         margin-bottom: 10px;
     }
 
