@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section+h1 {
+section+h1{
     margin-left: 100px;
     text-decoration: underline;
 }
@@ -77,10 +77,10 @@ section > div {
     float: left;
     background-color: #3CDB8C;
     border-collapse: collapse;
-    border-radius: 30px;
-    /* Supprime les espaces entre les bordures */
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     width: 90%;
-    /* Largeur du tableau */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .table-container table tr {
@@ -119,15 +119,22 @@ section > div {
     /* Aligner en haut */
 }
 
+td {
+    border-collapse: separate;
+    border: 3px solid #000;
+    
+  }
+
 /*-----Momment fort-----*/
 
 article+article {
     height: auto;
-    width: 40em;
+    width: 35em;
     margin-top: 20px;
     background-color: #33AC91;
     border-radius: 20px;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 article+article img {
@@ -152,6 +159,7 @@ article+article>h3 {
     background-color: black;
     margin-bottom: 20px;
     border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Sites figcaption, .Sites h2, .Sites h3, .Sites p {
@@ -173,6 +181,10 @@ article+article>h3 {
     margin-right: 20px;
 }
 
+.Sites figcaption+img {
+    margin-left: 20px;
+}
+
 /*-----Sports-----*/
 
 .Sports {
@@ -182,6 +194,7 @@ article+article>h3 {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Sports img {
@@ -207,6 +220,7 @@ article+article>h3 {
     flex-direction: column;
     background-color: #33AC91;
     border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Paralympiques img {
@@ -230,6 +244,20 @@ article+article>h3 {
 .Partenaire img {
     width: 550px;
     height: auto;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    box-shadow: 0px 4px 8px black;
+}
+
+section+h2 {
+    text-align: center;
 }
 
 /*-----FOOTER-----*/
