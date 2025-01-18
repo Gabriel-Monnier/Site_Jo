@@ -37,15 +37,19 @@
         transition: color 0.3s;
     }
 
+
+    /* PAGE DISCIPLINE */
+    
     .logo-container {
         display: flex;
         align-items: center;
         /* Aligne verticalement */
         justify-content: center;
         /* Centre horizontalement */
+        margin-bottom: 5em;
     }
 
-    .logo {
+    .logo-container img {
         width: 150px;
         height: auto;
         margin-right: 10px;
@@ -53,7 +57,7 @@
         /* Espace entre l'image et le texte */
     }
 
-    .logo-text {
+    .logo-container h1 {
         font-family: Arial, sans-serif;
         /* Remplacez par une police si besoin */
         font-size: 6em;
@@ -63,7 +67,7 @@
     }
 
     /* Pour les joueurs d'escrimes*/
-    h2+section {
+    .discipline > h2+section {
         background-color: #33ac91;
         padding: 2em;
         display: flex;
@@ -73,7 +77,7 @@
         justify-content: center;
     }
 
-    h2+section article {
+    .discipline > h2+section article {
         display: flex;
         flex-direction: column;
         /* Pour aligner les éléments verticalement */
@@ -84,16 +88,15 @@
         text-align: center;
         /* Centre le texte à l'intérieur de l'article */
         width: 25%;
-        /* Ou une autre largeur si nécessaire */
     }
 
 
 
-    figcaption {
+    .discipline > h2+section > article > figure > figcaption {
         font-size: 1.5em;
     }
 
-    section>h2 {
+    .table-container > article>h2 {
         font-size: 3em;
         display: block;
     }
@@ -101,7 +104,7 @@
 
     /* TABLEAU */
 
-    table {
+    .table-container > table {
         float: left;
         background-color: #3CDB8C;
         border-collapse: collapse;
@@ -112,7 +115,7 @@
         /* Largeur du tableau */
     }
 
-    caption {
+    .table-container > table > caption {
         background-color: #3CDB8C;
         width: 70%;
         font-weight: bold;
@@ -126,18 +129,18 @@
         /* Ajoute un espace entre le caption et le tableau */
     }
 
-    tr {
+    .table-container table tr {
         font-size: 2.25em;
     }
 
-    td img {
+    .table-container table tr td img {
         margin-right: 1.5em;
         /* Crée un espace entre l'image et le texte */
         vertical-align: middle;
         /* Assure que l'image et le texte sont alignés au centre verticalement */
     }
 
-    td {
+    .table-container table tr td {
         font-size: 1em;
         text-align: center;
         /* Centre horizontalement */
@@ -147,7 +150,7 @@
         /* Ajoute de l'espace autour du texte */
     }
 
-    tr td:first-child {
+    .table-container table tr td:first-child {
         width: 40%;
         text-align: left;
         vertical-align: middle;
@@ -169,7 +172,7 @@
     }
 
     /*pour la demande de s'inscrire a la FFE*/
-    div>article+article {
+    .discipline > div>article+article {
         margin-top: 8em;
         margin-left: 4em;
         display: flex;
@@ -180,12 +183,12 @@
 
 
 
-    h2 {
+    .discipline > h2 {
         font-size: 3.5em;
     }
 
     /* pour aller aux sous categorie de l'escrime */
-    aside {
+    .table-container > aside {
         width: 18%;
         /* Largeur de l'aside */
         border-radius: 30px;
@@ -199,20 +202,20 @@
         font-size: 1em;
     }
 
-    ul {
+    .table-container aside nav ul {
         list-style: none;
     }
 
-    li>a,
-    li>p {
+    .table-container aside nav ul li a,
+    .table-container aside nav ul li p {
         font-size: 2em;
     }
 
-    li>p {
+    .table-container aside nav ul li p {
         padding-left: 1em;
     }
 
-    div {
+    .discipline section article div {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -221,54 +224,54 @@
         margin-bottom: 3em;
     }
 
-    div>p {
+    .discipline section article div p {
         font-size: 2em;
     }
 
-    h3 {
+    .discipline section article h3 {
         font-size: 3em;
         display: block;
     }
 
-    article>p {
+    .table-container aside nav h3 {
+        font-size: 3em;
+        display: block;
+    }
+
+    .table-container article p {
         font-size: 2em;
         align-content: center;
     }
 
-    a:active,
-    a:hover,
-    a:visited,
-    a:focus,
-    a {
-        color: black;
-        text-decoration: none;
-    }
 
+    .table-container article {
+        margin-right: 10em;
+    }
     /*sportif médaillé */
 
-    section {
+    .discipline section {
         display: flex;
         flex-wrap: wrap;
         border-radius: 30px;
     }
 
-    article {
+    .discipline section article {
         position: relative;
         width: 100%;
         margin: 15px;
         transition: all 0.3s ease-in-out;
     }
 
-    article figure {
+    .discipline section article figure {
         margin: 0;
     }
 
-    article img {
+    .discipline section article img {
         max-width: 70%;
         transition: all 0.7s ease-in-out;
     }
 
-    article span {
+    .discipline section article span {
         position: absolute;
         top: 50%;
         left: 0;
@@ -281,13 +284,13 @@
         z-index: 1;
     }
 
-    article:hover figure img {
+    .discipline section article:hover figure img {
         transform: scale(1.2);
         /* L'image prend plus de place */
         width: 100%;
     }
 
-    article:hover span {
+    .discipline section article:hover span {
         opacity: 1;
         left: 70%;
         top: 15%;
@@ -296,11 +299,11 @@
         /* Paragraphe apparaîtra à droite */
     }
 
-    figcaption {
-        font-size: 2.5em;
+    .discipline section article figure figcaption {
+        font-size: 5em;
     }
 
-    article:hover figcaption {
+    .discipline section article:hover figcaption {
         display: none;
     }
 
@@ -413,9 +416,10 @@
         /* Aligne verticalement */
         justify-content: center;
         /* Centre horizontalement */
+        margin-bottom: 3.5em;
     }
 
-    .logo {
+    .logo-container img {
         width: 150px;
         height: auto;
         margin-right: 10px;
@@ -423,7 +427,7 @@
         /* Espace entre l'image et le texte */
     }
 
-    .logo-text {
+    .logo-container h1 {
         font-family: Arial, sans-serif;
         /* Remplacez par une police si besoin */
         font-size: 6em;
@@ -433,7 +437,7 @@
     }
 
     /* Pour les joueurs d'escrimes*/
-    h2+section {
+    .discipline > h2+section {
         background-color: #33ac91;
         padding: 2em;
         display: flex;
@@ -443,7 +447,7 @@
         justify-content: center;
     }
 
-    h2+section article {
+    .discipline > h2+section article  {
         display: flex;
         flex-direction: column;
         /* Pour aligner les éléments verticalement */
@@ -459,11 +463,11 @@
 
 
 
-    figcaption {
+    .discipline > h2+section > article > figure > figcaption {
         font-size: 1.5em;
     }
 
-    section>h2 {
+    .table-container > article>h2 {
         font-size: 3em;
         display: block;
     }
@@ -471,7 +475,7 @@
 
     /* TABLEAU */
 
-    table {
+    .table-container > table {
         float: left;
         background-color: #3CDB8C;
         border-collapse: collapse;
@@ -482,7 +486,7 @@
         /* Largeur du tableau */
     }
 
-    caption {
+    .table-container > table > caption {
         background-color: #3CDB8C;
         width: 70%;
         font-weight: bold;
@@ -496,11 +500,11 @@
         /* Ajoute un espace entre le caption et le tableau */
     }
 
-    tr {
+    .table-container table tr {
         font-size: 1.5em;
     }
 
-    td img {
+    .table-container table tr td img {
         margin-right: 0.6em;
         /* Crée un espace entre l'image et le texte */
         vertical-align: middle;
@@ -510,7 +514,7 @@
         height: auto;
     }
 
-    td {
+    .table-container table tr td {
         font-size: 1em;
         text-align: center;
         /* Centre horizontalement */
@@ -520,7 +524,7 @@
         /* Ajoute de l'espace autour du texte */
     }
 
-    tr td:first-child {
+    .table-container table tr td:first-child {
         width: 40%;
         text-align: left;
         vertical-align: middle;
@@ -542,7 +546,7 @@
     }
 
     /*pour la demande de s'inscrire a la FFE*/
-    div>article+article {
+    .discipline > div>article+article {
         margin-top: 8em;
         margin-left: 4em;
         display: flex;
@@ -553,12 +557,12 @@
 
 
 
-    h2 {
+    .discipline > h2 {
         font-size: 3.5em;
     }
 
     /* pour aller aux sous categorie de l'escrime */
-    aside {
+    .table-container > aside {
         width: 18%;
         /* Largeur de l'aside */
         border-radius: 30px;
@@ -572,20 +576,23 @@
         font-size: 0.60em;
     }
 
-    ul {
+    .table-container aside nav ul {
         list-style: none;
     }
 
-    li>a,
-    li>p {
+    .table-container aside nav ul li a,
+    .table-container aside nav ul li p {
         font-size: 2em;
     }
 
-    li>p {
+    .table-container aside nav ul li p {
         padding-left: 1em;
     }
+    .table-container aside nav h3 {
+        font-size: 3em;
+    }
 
-    div {
+    .discipline section article div {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -594,73 +601,64 @@
         margin-bottom: 3em;
     }
 
-    div>p {
+    .discipline section article div p {
         font-size: 1.25em;
     }
 
-    h3 {
+    .discipline section article h3 {
         font-size: 3em;
         display: block;
     }
 
     /*article du pictogramme*/
-    div>article {
+    .table-container>article {
         display: none;
     }
 
     /* image de la FIE*/
-    a>img {
+    .table-container article a>img {
         display: block;
         width: 33em;
         height: auto;
     }
 
-    article>p {
+    .table-container article>p {
         font-size: 2em;
         align-content: center;
     }
 
-    a:active,
-    a:hover,
-    a:visited,
-    a:focus,
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
     /*sportif médaillé */
 
-    section {
+    .discipline section {
         display: flex;
         flex-wrap: wrap;
         border-radius: 30px;
     }
 
-    article {
+    .discipline section article {
         position: relative;
         width: 100%;
         margin: 15px;
         transition: all 0.3s ease-in-out;
     }
 
-    article figure {
+    .discipline section article figure {
         margin: 0;
     }
 
-    figure img {
+    .discipline section article figure img {
         display: block;
         max-width: 70%;
         transition: all 0.7s ease-in-out;
     }
 
-    figure+img {
+    .discipline section figure+img {
         display: block;
         width: 7em;
         height: auto;
     }
 
-    article span {
+    .discipline section article span {
         position: absolute;
         top: 50%;
         left: 0;
@@ -673,13 +671,13 @@
         z-index: 1;
     }
 
-    article:hover figure img {
+    .discipline section article:hover figure img {
         transform: scale(1.2);
         /* L'image prend plus de place */
         width: 100%;
     }
 
-    article:hover span {
+    .discipline section article:hover span {
         opacity: 1;
         left: 70%;
         top: 15%;
@@ -688,11 +686,7 @@
         /* Paragraphe apparaîtra à droite */
     }
 
-    figcaption {
-        font-size: 1.5em;
-    }
-
-    article:hover figcaption {
+    .discipline section article:hover figcaption {
         display: none;
     }
 
