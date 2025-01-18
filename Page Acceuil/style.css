@@ -17,34 +17,43 @@ img {
 
 header {
     background-color: #3CDB8C;
-    background-image: url(images/Capture\ d’écran_2025-01-13_17-00-15.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 2em 2em;
+    padding: 1em 2em; /* Réduit le padding pour les petits écrans */
     display: flex;
-    justify-content: left;
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
     align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de s'empiler sur les petits écrans */
 }
 
-header>nav {
+header > nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50em;
+    flex-wrap: wrap; /* Adapte le menu pour les petits écrans */
+    gap: 1em;
 }
 
-header>nav>ul {
+header > nav > ul {
     list-style: none;
     display: flex;
-    gap: 2em;
-    padding-left: 5em;
+    flex-wrap: wrap; /* Permet au menu de s'adapter en cas de débordement */
+    gap: 1.5em;
+    padding: 0;
+    margin: 0;
 }
 
 header a {
     text-decoration: none;
     color: black;
+    background-color: #2eaf8f;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: block; /* Facilite l'adaptation du texte */
+}
+
+header a:hover {
+    background-color: #1a9577;
+    transform: translateY(-2px);
 }
 
 /*-----MAIN-----*/
@@ -56,11 +65,77 @@ section {
     margin-right: 100px;
 }
 
+section > div {
+    display: flex;
+    flex-direction: row;
+}
+
+/*-----TABLEAU-----*/
+
+.table-container > table {
+    margin-top: 20px;
+    float: left;
+    background-color: #3CDB8C;
+    border-collapse: collapse;
+    border-radius: 30px;
+    /* Supprime les espaces entre les bordures */
+    width: 90%;
+    /* Largeur du tableau */
+}
+
+.table-container table tr {
+    font-size: 1.5em;
+}
+
+.table-container table tr td img {
+    margin-right: 1.5em;
+    /* Crée un espace entre l'image et le texte */
+    vertical-align: middle;
+    /* Assure que l'image et le texte sont alignés au centre verticalement */
+}
+
+.table-container table tr td {
+    font-size: 0.75em;
+    text-align: center;
+    /* Centre horizontalement */
+    vertical-align: middle;
+    /* Centre verticalement */
+    padding: 10px;
+    /* Ajoute de l'espace autour du texte */
+}
+
+.table-container table tr td:first-child {
+    width: 40%;
+    text-align: left;
+    vertical-align: middle;
+    /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    /* Espace entre les éléments */
+    align-items: flex-start;
+    /* Aligner en haut */
+}
+
 /*-----Momment fort-----*/
 
 article+article {
+    height: auto;
+    width: 40em;
+    margin-top: 20px;
     background-color: #33AC91;
     border-radius: 20px;
+    text-align: center;
+}
+
+article+article img {
+    width: 15em;
+    height: auto;
+}
+article+article figcaption {
+    font-weight: bold;
 }
 
 article+article>h3 {
