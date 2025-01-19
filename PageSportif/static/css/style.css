@@ -202,7 +202,7 @@ main{
 
 /*-----HEADER-----*/
 
-.Sportif header {
+header {
     background-color: #3CDB8C;
     padding: 1em 2em; /* Réduit le padding pour les petits écrans */
     display: flex;
@@ -210,14 +210,12 @@ main{
     align-items: center;
     flex-wrap: wrap; /* Permet aux éléments de s'empiler sur les petits écrans */
 }
-
-.Sportif header > nav {
+header > nav {
     display: flex;
     flex-wrap: wrap; /* Adapte le menu pour les petits écrans */
     gap: 1em;
 }
-
-.Sportif header > nav > ul {
+header > nav > ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap; 
@@ -226,7 +224,7 @@ main{
     margin: 0;
 }
 
-.Sportif header a {
+header a {
     text-decoration: none;
     color: black;
     background-color: #2eaf8f;
@@ -237,8 +235,7 @@ main{
     text-align: center;
     display: block; 
 }
-
-.Sportif header a:hover {
+header a:hover {
     background-color: #1a9577;
     transform: translateY(-2px);
 }
