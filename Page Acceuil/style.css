@@ -3,15 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section+h1{
-    margin-left: 100px;
-    text-decoration: underline;
-}
 
-img {
-    object-fit: cover;
-    border-radius: 20px;
-}
 
 /*-----HEADER-----*/
 
@@ -54,6 +46,16 @@ header a {
 header a:hover {
     background-color: #1a9577;
     transform: translateY(-2px);
+}
+
+#Acceuil section+h1{
+    margin-left: 100px;
+    text-decoration: underline;
+}
+
+#Acceuil img {
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 /*-----MAIN-----*/
@@ -164,12 +166,19 @@ header a:hover {
 }
 
 #Acceuil #Sites figcaption, #Sites h2, #Sites h3, #Sites p {
-    color: white;
+    color: black;
+    transition-duration: 2s;
 }
 
 #Acceuil #Sites figure {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+#Acceuil #Sites #inverse {
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 
@@ -180,6 +189,12 @@ header a:hover {
 
 #Acceuil #Sites figcaption+img {
     margin-left: 20px;
+}
+
+#Acceuil #Sites img:hover+figcaption, #Acceuil #Sites img:hover+figcaption h3 {
+    transition-property: color;
+    color: white;
+    transition-duration: 3s;
 }
 
 /*-----Sports-----*/
@@ -208,6 +223,16 @@ header a:hover {
 #Acceuil #Sports figcaption {
     text-align: center;
     text-decoration: underline;
+    transition-duration: 1s;
+}
+
+#Acceuil #Sports a {
+    color: black;
+}
+
+#Acceuil #Sports figcaption:hover {
+    font-size: 1.5em;
+    transition-duration: 1s;
 }
 
 /*-----Paralympiques-----*/
@@ -321,13 +346,13 @@ footer div {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    section+h1{
+    #Accueil section+h1{
         font-size: 1.6em;
         margin-left: 40px;
         text-decoration: underline;
     }
 
-    img {
+    #Accueil img {
         object-fit: cover;
         border-radius: 20px;
     }
@@ -490,6 +515,10 @@ footer div {
         font-size: 0.75em;
     }
 
+    #Acceuil #Sites figcaption, #Sites h2, #Sites h3, #Sites p {
+        color: white;
+    }
+
     #Acceuil #Sites figcaption+h3 {
         font-size: 1em;
     }
@@ -560,69 +589,5 @@ footer div {
     #Acceuil #Partenaire img {
         width: 100%; 
         height: auto;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    footer ul {
-        padding: 0;
-        margin: 10px 0;
-    }
-
-    /*-----FOOTER-----*/
-
-    footer {
-        background-color: black;
-        color: #ffffff;
-        padding-top: 2em;
-        padding-bottom: 2.5em;
-
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        width: 100%;
-    }
-
-    footer>img {
-        padding-left: 3em;
-    }
-
-    footer>nav {
-        border-left: 1px solid #ffffff;
-        margin-left: 3em;
-        padding-left: 2em;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    footer a:hover {
-        color: lightgray;
-    }
-
-    footer a {
-        text-decoration: none;
-        color: white;
-    }
-
-    footer ul {
-        list-style: none;
-        line-height: 2em;
-    }
-
-    footer ul:nth-child(2) {
-        padding-left: 5em;
-    }
-
-    footer div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 70%;
-        height: 50%;
     }
 }
