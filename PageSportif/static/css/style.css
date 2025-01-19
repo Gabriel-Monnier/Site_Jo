@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (min-width: 1440px) {
     body{
         font-family: Arial, Helvetica, sans-serif;
@@ -296,8 +297,299 @@
         width: 70%;
         height: 50%;
     }
+=======
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+>>>>>>> 5d6348469dd780864b22fc591fc7ca7e97ed02b7
 }
-@media(max-width: 480px){
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Sportif section{
+    background-color: #33ac91;
+    border-radius: 1.875em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5em;
+    padding: 3.25em;
+    width: 77.125em;
+}
+.Sportif article{
+    background-color: #ffffff;
+    border-radius: 1.875em;
+    width: 65.8125em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+.Sportif  h2{
+    padding-top: 52;
+    font-size: 2.25em;
+}
+/*-------Menu du Site --------*/
+.Sportif section:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 1.875em
+}
+.Sportif section:nth-child(1) > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
     
+}
+.Sportif section:nth-child(1) img {
+    width: 18em;
+    height: 21.5em;
+    padding-right: 0.625em;
+    margin-left: 0;
+}
+.Sportif section:nth-child(1) h1 {
+    font-size: 3.375em;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.Sportif section:nth-child(1) div div  img:first-child{
+    width: 4.75em;
+    height: 2.764375em;
+}
+.Sportif section:nth-child(1) div > div:nth-child(2) {
+    margin-top: 0.625em;
+}
+.Sportif section:nth-child(1) div div div {
+    width: 750px;
+    height: 250px;
+    font-size: 40px;
+}
+
+.Sportif section:nth-child(1) div > div >  p {
+    margin: 5px 0;
+}
+.Sportif section:nth-child(1) nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Sportif section:nth-child(1) nav a {
+    margin-top: 0.625em;
+    font-size: 1.875em;
+    color: black;
+    text-decoration: none;
+    margin-right: 1.25em;
+    align-items: center;
+}
+
+.Sportif section:nth-child(1) nav a:hover {
+    text-decoration: underline;
+}
+/*-----Biographie Du Sportif-----*/
+.Sportif section:nth-child(2) > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    width: 100%;
+}
+.Sportif section:nth-child(2) > div > article{
+    background-color: #33ac91;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.Sportif section:nth-child(2) > div > article> h3{
+    text-align: center;
+    font-weight: normal;
+} 
+.Sportif section:nth-child(2) > div > article> p{
+    text-align: center;
+}
+/*------ Les boutons de la page ------*/
+.Sportif button {
+    width: 100%;
+    padding: 0.625em 1.25em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 1.875em;
+    background-color: white;
+    color: black;
+    transition: background-color 1s, transform 1s;
+    position: relative;
+}
+
+
+.Sportif button::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+.Sportif button:hover::before {
+    opacity: 0.7;
+}
+
+.Sportif button:hover {
+    
+    background-color: white;
+    transform: scale(1.1);
+}
+.Sportif button span:nth-child(1){
+    display: block;
+}
+.Sportif button span:nth-child(2){
+    display: none;
+}
+.Sportif button:hover span:nth-child(1){
+    display: none;
+}
+.Sportif button:hover span:nth-child(2){
+    display: block;
+}
+
+
+
+/*-----En Savoir PLUS-----*/
+.Sportif section:nth-child(6) > div{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px; 
+}
+.Sportif section:nth-child(6) > div > article{
+    background-color: #33ac91;
+    width: 100%;
+    max-width: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+.Sportif section:nth-child(6) > div > article> h4{
+    text-align: center;
+    font-weight: normal;
+} 
+.Sportif section:nth-child(6) > div > article> p{
+    text-align: center;
+}
+
+/*-----Les tableaux -----*/
+.Sportif table {
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.Sportif th, td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+}
+
+.Sportif th {
+    background-color: #f2f2f2;
+}
+
+.Sportif tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.Sportif tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/*-----HEADER-----*/
+
+header {
+    background-color: #3CDB8C;
+    padding: 1em 2em; /* Réduit le padding pour les petits écrans */
+    display: flex;
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de s'empiler sur les petits écrans */
+}
+header > nav {
+    display: flex;
+    flex-wrap: wrap; /* Adapte le menu pour les petits écrans */
+    gap: 1em;
+}
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    background-color: #2eaf8f;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: block; 
+}
+header a:hover {
+    background-color: #1a9577;
+    transform: translateY(-2px);
+}
+/*-----FOOTER-----*/
+
+footer{
+    background-color: black;
+    color: #ffffff;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+footer > a > img {
+    padding-left: 3em;
+}
+
+footer > nav {
+    border-left: 1px solid #ffffff;
+    margin-left: 3em;
+    padding-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer a:hover {
+    color: lightgray;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+footer ul:nth-child(2){
+    padding-left: 5em;
+}
+
+footer div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
 }
 
