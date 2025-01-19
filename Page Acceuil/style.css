@@ -500,9 +500,7 @@ footer div {
     }
 
     #Acceuil #Sites img {
-        width: 0; 
-        height: auto; 
-        margin: 0;
+        display: none;
     }
 
     #Acceuil #Sites figure {
@@ -544,8 +542,7 @@ footer div {
     }
 
     #Acceuil #Paralympiques img {
-        width: 0;
-        height: 0;
+        display: none;
     }
 
     #Acceuil #Paralympiques figure {
