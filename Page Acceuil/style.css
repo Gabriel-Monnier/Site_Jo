@@ -58,21 +58,21 @@ header a:hover {
 
 /*-----MAIN-----*/
 
-section {
+#Acceuil section {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
     margin-right: 100px;
 }
 
-section > div {
+#Acceuil section > div {
     display: flex;
     flex-direction: row;
 }
 
 /*-----TABLEAU-----*/
 
-.table-container > table {
+ #Acceuil #table-container > table {
     margin-top: 20px;
     float: left;
     background-color: #3CDB8C;
@@ -83,18 +83,18 @@ section > div {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.table-container table tr {
+#Acceuil #table-container table tr {
     font-size: 1.5em;
 }
 
-.table-container table tr td img {
+#Acceuil #table-container table tr td img {
     margin-right: 1.5em;
     /* Crée un espace entre l'image et le texte */
     vertical-align: middle;
     /* Assure que l'image et le texte sont alignés au centre verticalement */
 }
 
-.table-container table tr td {
+#Acceuil #table-container table tr td {
     font-size: 0.75em;
     text-align: center;
     /* Centre horizontalement */
@@ -104,14 +104,14 @@ section > div {
     /* Ajoute de l'espace autour du texte */
 }
 
-.table-container table tr td:first-child {
+#Acceuil #table-container table tr td:first-child {
     width: 40%;
     text-align: left;
     vertical-align: middle;
     /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
 }
 
-.table-container {
+#Acceuil #table-container {
     display: flex;
     justify-content: space-between;
     /* Espace entre les éléments */
@@ -119,15 +119,15 @@ section > div {
     /* Aligner en haut */
 }
 
-td {
+#Acceuil td {
     border-collapse: separate;
     border: 3px solid #000;
     
-  }
+}
 
 /*-----Momment fort-----*/
 
-article+article {
+#Acceuil article+article {
     height: auto;
     width: 35em;
     margin-top: 20px;
@@ -137,22 +137,23 @@ article+article {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-article+article img {
+#Acceuil article+article img {
     width: 15em;
     height: auto;
 }
-article+article figcaption {
+#Acceuil article+article figcaption {
     font-weight: bold;
 }
 
-article+article>h3 {
+#Acceuil article+article>h3 {
     text-align: center;
     margin-left: 40px;
 }
 
 /*-----Sites-----*/
 
-.Sites {
+
+#Acceuil #Sites {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -162,32 +163,28 @@ article+article>h3 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.Sites figcaption, .Sites h2, .Sites h3, .Sites p {
+#Acceuil #Sites figcaption, #Sites h2, #Sites h3, #Sites p {
     color: white;
 }
 
-.Sites p {
-    margin: 10px;
-}
-
-.Sites figure {
+#Acceuil #Sites figure {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.Sites img {
+#Acceuil #Sites img {
     width: 1500px;
     margin-right: 20px;
 }
 
-.Sites figcaption+img {
+#Acceuil #Sites figcaption+img {
     margin-left: 20px;
 }
 
 /*-----Sports-----*/
 
-.Sports {
+#Acceuil #Sports {
     background-color: #3CDB8C;
     border-radius: 20px;
     display: flex;
@@ -197,25 +194,25 @@ article+article>h3 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.Sports img {
+#Acceuil #Sports img {
     width: 320px;
     height: 200px;
 }
 
-.Sports figure {
+#Acceuil #Sports figure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.Sports figcaption {
+#Acceuil #Sports figcaption {
     text-align: center;
     text-decoration: underline;
 }
 
 /*-----Paralympiques-----*/
 
-.Paralympiques {
+#Acceuil #Paralympiques {
     display: flex;
     flex-direction: column;
     background-color: #33AC91;
@@ -223,30 +220,30 @@ article+article>h3 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.Paralympiques img {
+#Acceuil #Paralympiques img {
     width: 460px;
     height: auto;
 }
 
-.Paralympiques figure {
+#Acceuil #Paralympiques figure {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 40px;
 }
 
-.Paralympiques figcaption {
+#Acceuil #Paralympiques figcaption {
     margin-left: 20px;
 }
 
 /*-----Partenaire-----*/
 
-.Partenaire img {
+#Acceuil #Partenaire img {
     width: 550px;
     height: auto;
 }
 
-aside {
+#Acceuil aside {
     display: flex;
     flex-direction: row;
     margin-left: 100px;
@@ -256,7 +253,7 @@ aside {
     box-shadow: 0px 4px 8px black;
 }
 
-section+h2 {
+#Acceuil section+h2 {
     text-align: center;
 }
 
@@ -311,4 +308,324 @@ footer div {
     justify-content: space-around;
     width: 70%;
     height: 50%;
+}
+
+
+
+
+
+
+@media (max-width: 1439px) and (max-height: 1023px) {
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    section+h1{
+        font-size: 1.6em;
+        margin-left: 40px;
+        text-decoration: underline;
+    }
+
+    img {
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /*-----HEADER-----*/
+
+    header {
+        font-size: 0.4em;
+        background-color: #3CDB8C;
+        padding: 1em 2em; /* Réduit le padding pour les petits écrans */
+        display: flex;
+        justify-content: space-between; /* Répartit l'espace entre les éléments */
+        align-items: center;
+        flex-wrap: wrap; /* Permet aux éléments de s'empiler sur les petits écrans */
+    }
+
+    header > nav {
+        display: flex;
+        flex-wrap: wrap; /* Adapte le menu pour les petits écrans */
+        gap: 1em;
+    }
+
+    header > nav > ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 1.5em;
+        padding: 0;
+        margin: 0;
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+        background-color: #2eaf8f;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        text-align: center;
+        display: block; 
+    }
+
+    header a:hover {
+        background-color: #1a9577;
+        transform: translateY(-2px);
+    }
+
+    header img{
+        width: 6em;
+        height: auto;
+    }
+
+    /*-----MAIN-----*/
+
+    #Acceuil section {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #Acceuil section > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*-----TABLEAU-----*/
+
+    #Acceuil #table-container > table {
+        margin-top: 20px;
+        float: left;
+        background-color: #3CDB8C;
+        border-collapse: collapse;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        height: auto;
+        width: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #Acceuil #table-container table th {
+        font-size: 0.75em;
+    }
+
+    #Acceuil #table-container table tr {
+        font-size: 1.25em;
+    }
+
+    #Acceuil #table-container table tr td img {
+        width: 50%;
+        height: auto;
+        margin-right: 1.5em;
+        vertical-align: middle;
+    }
+
+    #Acceuil #table-container table tr td {
+        font-size: 0.6em;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+    }
+
+    #Acceuil #table-container table tr td:first-child {
+        width: 40%;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    #Acceuil #table-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #Acceuil td {
+        border-collapse: separate;
+        border: 3px solid #000;
+        
+    }
+
+    /*-----Momment fort-----*/
+
+    #Acceuil article+article {
+        height: auto;
+        width: 384px;
+        margin-top: 20px;
+        background-color: #33AC91;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+    }
+
+    #Acceuil article+article img {
+        width: 9em;
+        height: auto;
+    }
+
+    #Acceuil article+article figcaption {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    #Acceuil article+article>h3 {
+        font-size: 1.2em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /*-----Sites-----*/
+
+    #Acceuil #Sites {
+        margin-left: 40px;
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+    }
+
+    #Acceuil #Sites figcaption {
+        font-size: 0.75em;
+    }
+
+    #Acceuil #Sites figcaption+h3 {
+        font-size: 1em;
+    }
+
+    #Acceuil #Sites h2, 
+    #Acceuil #Sites p {
+        font-size: 0.9em;
+    }
+
+    #Acceuil #Sites img {
+        width: 0; 
+        height: auto; 
+        margin: 0;
+    }
+
+    #Acceuil #Sites figure {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*-----Sports-----*/
+
+    #Acceuil #Sports {
+        flex-direction: row; 
+        gap: 10px; 
+        justify-content: center;
+    }
+
+    #Acceuil #Sports img {
+        width: 12em;
+        height: auto;
+        margin-left: 0;
+    }
+
+    #Acceuil #Sports figcaption {
+        font-size: 0.8em; 
+    }
+
+    /*-----Paralympiques-----*/
+
+    #Acceuil #Paralympiques {
+        width: 384px;
+        background-color: #33AC91;
+        margin-top: 20px;
+        margin: 40px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #Acceuil #Paralympiques p {
+        font-size: 0.9em;
+    }
+
+    #Acceuil #Paralympiques img {
+        width: 0;
+        height: 0;
+    }
+
+    #Acceuil #Paralympiques figure {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /*-----Paralympiques-----*/
+
+    #Acceuil #Partenaire  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Acceuil #Partenaire img {
+        width: 100%; 
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer ul {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    /*-----FOOTER-----*/
+
+    footer {
+        background-color: black;
+        color: #ffffff;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer>img {
+        padding-left: 3em;
+    }
+
+    footer>nav {
+        border-left: 1px solid #ffffff;
+        margin-left: 3em;
+        padding-left: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    footer a:hover {
+        color: lightgray;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer ul {
+        list-style: none;
+        line-height: 2em;
+    }
+
+    footer ul:nth-child(2) {
+        padding-left: 5em;
+    }
+
+    footer div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 70%;
+        height: 50%;
+    }
 }

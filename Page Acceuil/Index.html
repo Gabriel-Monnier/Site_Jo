@@ -7,9 +7,10 @@
     <meta name="description" content="Ce site présente les épreuves des JO plus particulièrement le Fleuret Homme">
     <meta name="keywords" content="Paris, France, Fleuret, Homme, Epreuve, Site, Paralympiques" lang="fr">
     <link rel="stylesheet" href="style.css">
+    <link rel="boutton" href="boutton.js">
 </head>
 
-<body>
+<body id="Acceuil">
     <header>
         <a><img src="images/logo-jo.png" alt="Logo des JO" title="Logo des JO" width="100px" height="100px"></a>
         <nav>
@@ -18,7 +19,7 @@
                     <h1><a href="#idSports">Sports</a></h1>
                 </li>
                 <li>
-                    <h1><a href="#Paralympiques">Paralympiques</a></h1>
+                    <h1><a href="#idpara">Paralympiques</a></h1>
                 </li>
                 <li>
                     <h1><a href="#idSites">Sites</a></h1>
@@ -34,7 +35,7 @@
     <main>
         <section>
             <div>
-                <article class="table-container">
+                <article id="table-container">
                     <table>
                         <tr>
                             <th>Pays</th>
@@ -94,9 +95,9 @@
             </div>
         </section>
         <h1 id="idSites">_Les sites</h1>
-        <section class="Sites">
+        <section id="Sites">
             <figure>
-               <img src="images/CHÂTEAU_DE_VERSAILLES.avif" alt="CHÂTEAU DE VERSAILLES">
+                <img src="images/CHÂTEAU_DE_VERSAILLES.avif" alt="CHÂTEAU DE VERSAILLES">
                 <figcaption>
                     <h3>Château de Versaille</h3>
                     Le Château de Versailles, joyau du patrimoine mondial et symbole de l’histoire et de la grandeur française, sera l’un des sites les plus prestigieux 
@@ -115,6 +116,7 @@
                     alliant le prestige de l’Histoire à l’intensité des performances athlétiques.
                 </figcaption>
             </figure>
+            <a href="#"><p>Voir plus</p></a>
             <figure>
                 <figcaption>
                     <h3>Parc des Princes</h3>
@@ -170,10 +172,10 @@
                     Ainsi, le Champ-de-Mars et la Tour Eiffel, déjà des symboles de Paris et de la France, se verront reconfigurés pour offrir des moments inoubliables aux 
                     spectateurs, tout en mettant en lumière la dimension universelle des Jeux Olympiques et Paralympiques.
                     </figcaption>
-               <img src="images/STADE_TOUR_EIFFEL.avif" alt="STADE TOUR EIFFEL">
+            <img src="images/STADE_TOUR_EIFFEL.avif" alt="STADE TOUR EIFFEL">
             </figure>
             <figure>
-               <img src="images/Invalides.avif" alt="Invalides">
+            <img src="images/Invalides.avif" alt="Invalides">
                 <figcaption>
                     <h3>Invaldes</h3>
                     Les Invalides, site emblématique de Paris, sera un lieu clé des Jeux Olympiques et Paralympiques de 2024. Ce prestigieux ensemble architectural,
@@ -211,10 +213,9 @@
                 </figcaption>
                 <img src="images/TAHITI.avif" alt="TAHITI">
             </figure>
-            <p>Voir plus</p>
         </section>
         <h1 id="idSports">_Les sports</h1>
-        <section class="Sports">
+        <section id="Sports">
             <figure>
                 <img src="images/slider-escrime-2.jpg" alt="escrime">
                 <figcaption>
@@ -282,8 +283,8 @@
                 </figcaption>
             </figure>
         </section>
-        <h1 id="Paralympiques">_Jeux paralympiques</h1>
-        <section class="Paralympiques">
+        <h1 id="idpara">_Jeux paralympiques</h1>
+        <section id="Paralympiques">
             <figure>
                 <img src="images/jeux-paralympique.webp" alt="jeux-paralympique">
                 <figcaption>
@@ -295,7 +296,7 @@
             </figure>
         </section>
         <h2>Partenaire</h2>
-        <aside class="Partenaire">
+        <aside id="Partenaire">
             <img src="images/Partenaire_2.png" alt="Partenaire">
             <img src="images/Partenaire_1.png" alt="Partenaire">
             <img src="images/Partenaire_3.png" alt="Partenaire">
