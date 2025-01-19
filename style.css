@@ -1445,7 +1445,7 @@ footer div{
         
     }
     .Sportif main{
-        background-color:#F5F5F5;
+        background-color:white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1477,9 +1477,7 @@ footer div{
         font-size: 2.25em;
     }
     /*-------Menu du Site --------*/
-    .Sportif img{
-        width: 90%;
-    }
+
     .Sportif section:nth-child(1){
         display: none;
     }
@@ -1494,22 +1492,22 @@ footer div{
         align-items: center;
         
     }
-    .Sportif section:nth-child(1) img {
+    .Sportif section:nth-child(1) > div > img {
         padding-right: 0.625em;
         margin-left: 0;
+        width: 50%;
     }
     .Sportif section:nth-child(1) h1 {
         font-size: 3.375em;
         margin: 0;
         font-weight: bold;
-        
     }
     .Sportif section:nth-child(1) div div  img:first-child{
-        width: 100%;
-        height: 100%;
+        width: 35%;
     }
-    .Sportif section:nth-child(1) div > div:nth-child(2) {
+    .Sportif section:nth-child(1) div > div:nth-child(2){
         margin-top: 0.625em;
+        width: 100%;
     }
     .Sportif section:nth-child(1) div div div {
         width: 750px;
