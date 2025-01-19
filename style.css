@@ -920,6 +920,213 @@ footer div{
         height: auto;
     }
 
+    #Accueil main {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #Accueil section+h1 { 
+        font-size: 1.6em;
+        margin-left: 40px;
+        text-decoration: underline;
+    }
+
+    #Accueil img {
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /*-----MAIN-----*/
+
+    #Acceuil section {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #Acceuil section > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*-----TABLEAU-----*/
+
+    #Acceuil #table-container > table {
+        margin-top: 20px;
+        float: left;
+        background-color: #3CDB8C;
+        border-collapse: collapse;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        height: auto;
+        width: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #Acceuil #table-container table th {
+        font-size: 0.75em;
+    }
+
+    #Acceuil #table-container table tr {
+        font-size: 1.25em;
+    }
+
+    #Acceuil #table-container table tr td img {
+        width: 50%;
+        height: auto;
+        margin-right: 1.5em;
+        vertical-align: middle;
+    }
+
+    #Acceuil #table-container table tr td {
+        font-size: 0.6em;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+    }
+
+    #Acceuil #table-container table tr td:first-child {
+        width: 40%;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    #Acceuil #table-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #Acceuil td {
+        border-collapse: separate;
+        border: 3px solid #000;
+        
+    }
+
+    /*-----Momment fort-----*/
+
+    #Acceuil article+article {
+        height: auto;
+        width: 384px;
+        margin-top: 20px;
+        background-color: #33AC91;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+    }
+
+    #Acceuil article+article img {
+        width: 9em;
+        height: auto;
+    }
+
+    #Acceuil article+article figcaption {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    #Acceuil article+article>h3 {
+        font-size: 1.2em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /*-----Sites-----*/
+
+    #Acceuil #Sites {
+        margin-left: 40px;
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+    }
+
+    #Acceuil #Sites figcaption {
+        font-size: 0.75em;
+    }
+
+    #Acceuil #Sites figcaption, #Sites h2, #Sites h3, #Sites p {
+        color: white;
+    }
+
+    #Acceuil #Sites figcaption+h3 {
+        font-size: 1em;
+    }
+
+    #Acceuil #Sites h2, 
+    #Acceuil #Sites p {
+        font-size: 0.9em;
+    }
+
+    #Acceuil #Sites img {
+        display: none;
+    }
+
+    #Acceuil #Sites figure {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*-----Sports-----*/
+
+    #Acceuil #Sports {
+        flex-direction: row; 
+        gap: 10px; 
+        justify-content: center;
+    }
+
+    #Acceuil #Sports img {
+        width: 12em;
+        height: auto;
+        margin-left: 0;
+    }
+
+    #Acceuil #Sports figcaption {
+        font-size: 0.8em; 
+    }
+
+    /*-----Paralympiques-----*/
+
+    #Acceuil #Paralympiques {
+        width: 384px;
+        background-color: #33AC91;
+        margin-top: 20px;
+        margin: 40px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #Acceuil #Paralympiques p {
+        font-size: 0.9em;
+    }
+
+    #Acceuil #Paralympiques img {
+        display: none;
+    }
+
+    #Acceuil #Paralympiques figure {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /*-----Paralympiques-----*/
+
+    #Acceuil #Partenaire  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Acceuil #Partenaire img {
+        width: 100%; 
+        height: auto;
+    }
+
+    /************************************
+    *                                   *
+    *          fin PAGE Accueil         *
+    *                                   *
+    ************************************/
+
     /*----------------------*/
     /*----------------------*/
     /*-----Page Escrime-----*/
@@ -1238,7 +1445,7 @@ footer div{
         
     }
     .Sportif main{
-        background-color:#F5F5F5;
+        background-color:white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1270,9 +1477,7 @@ footer div{
         font-size: 2.25em;
     }
     /*-------Menu du Site --------*/
-    .Sportif img{
-        width: 90%;
-    }
+
     .Sportif section:nth-child(1){
         display: none;
     }
@@ -1287,22 +1492,22 @@ footer div{
         align-items: center;
         
     }
-    .Sportif section:nth-child(1) img {
+    .Sportif section:nth-child(1) > div > img {
         padding-right: 0.625em;
         margin-left: 0;
+        width: 50%;
     }
     .Sportif section:nth-child(1) h1 {
         font-size: 3.375em;
         margin: 0;
         font-weight: bold;
-        
     }
     .Sportif section:nth-child(1) div div  img:first-child{
-        width: 100%;
-        height: 100%;
+        width: 35%;
     }
-    .Sportif section:nth-child(1) div > div:nth-child(2) {
+    .Sportif section:nth-child(1) div > div:nth-child(2){
         margin-top: 0.625em;
+        width: 100%;
     }
     .Sportif section:nth-child(1) div div div {
         width: 750px;
@@ -1651,22 +1856,50 @@ footer div{
 /* Version smartphones (moins de 768px) */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Les éléments s'empilent sur petits écrans */
+        font-size: 0.4em;
+        background-color: #3CDB8C;
+        padding: 1em 2em; /* Réduit le padding pour les petits écrans */
+        display: flex;
+        justify-content: space-between; /* Répartit l'espace entre les éléments */
         align-items: center;
+        flex-wrap: wrap; /* Permet aux éléments de s'empiler sur les petits écrans */
     }
 
     header > nav {
-        flex-direction: column; /* Le menu s'empile verticalement */
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap; /* Adapte le menu pour les petits écrans */
+        gap: 1em;
     }
 
     header > nav > ul {
-        gap: 2em; /* Réduit l'espacement entre les liens */
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 1.5em;
+        padding: 0;
+        margin: 0;
     }
 
     header a {
-        padding: 10px; /* Réduit le padding pour les petits écrans */
-        width: 100%; /* Les liens occupent toute la largeur disponible */
+        text-decoration: none;
+        color: black;
+        background-color: #2eaf8f;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        text-align: center;
+        display: block; 
+    }
+
+    header a:hover {
+        background-color: #1a9577;
+        transform: translateY(-2px);
+    }
+
+    header img{
+        width: 6em;
+        height: auto;
     }
 
     #Epreuve {
