@@ -303,10 +303,6 @@ footer div{
 
     /* fin du tableau */
 
-    p {
-        text-align: justify;
-    }
-
     /*pour la demande de s'inscrire a la FFE*/
     .discipline > div>article+article {
         margin-top: 8em;
@@ -615,10 +611,6 @@ footer div{
     }
 
     /* fin du tableau */
-
-    p {
-        text-align: justify;
-    }
 
     /*pour la demande de s'inscrire a la FFE*/
     .discipline > div>article+article {
