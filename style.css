@@ -1,45 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
+    background-color: white;
     margin: 0;
 }
-
-main{
-    margin: 0 30px;
-    padding: 10px 25px;
-    background-color: #ffffff;
-}
-
-p{
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-    text-justify: auto;
-}
-
-a {
-  color: inherit; /* Utilise la couleur du texte environnant */
-  text-decoration: none; /* Supprime le soulignement */
-}
-
-a:visited {
-  color: inherit; /* Empêche la couleur de changer après une visite */
-}
-
-a:hover {
-  text-decoration: none; /* Empêche l'apparition d'un soulignement au survol */
-}
-
-a:focus {
-  text-decoration: none; /* Supprime le soulignement en cas de focus */
-}
-
-a:active {
-  text-decoration: none; /* Empêche le soulignement lors du clic */
-  color: inherit; /* Maintient la même couleur pendant le clic */
-}
-
 /*-----HEADER-----*/
 
 header {
@@ -83,12 +46,287 @@ header a:hover {
     transform: translateY(-2px);
 }
 
+main{
+    margin: 0 30px;
+    padding: 10px 25px;
+    background-color: #ffffff;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-justify: auto;
+}
+
+a {
+  color: inherit; /* Utilise la couleur du texte environnant */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+a:visited {
+  color: inherit; /* Empêche la couleur de changer après une visite */
+}
+
+a:hover {
+  text-decoration: none; /* Empêche l'apparition d'un soulignement au survol */
+}
+
+a:focus {
+  text-decoration: none; /* Supprime le soulignement en cas de focus */
+}
+
+a:active {
+  text-decoration: none; /* Empêche le soulignement lors du clic */
+  color: inherit; /* Maintient la même couleur pendant le clic */
+}
+
+/************************************
+*                                   *
+*           PAGE Accueil            *
+*                                   *
+************************************/
+
+#Acceuil section+h1{
+    text-decoration: underline;
+}
+
+#Acceuil img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/*-----MAIN-----*/
+
+#Acceuil section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+#Acceuil section > div {
+    display: flex;
+    flex-direction: row;
+}
+
+/*-----TABLEAU-----*/
+
+ #Acceuil #table-container > table {
+    margin-top: 20px;
+    float: left;
+    background-color: #3CDB8C;
+    border-collapse: collapse;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 90%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Acceuil #table-container table tr {
+    font-size: 1.5em;
+}
+
+#Acceuil #table-container table tr td img {
+    margin-right: 1.5em;
+    /* Crée un espace entre l'image et le texte */
+    vertical-align: middle;
+    /* Assure que l'image et le texte sont alignés au centre verticalement */
+}
+
+#Acceuil #table-container table tr td {
+    font-size: 0.75em;
+    text-align: center;
+    /* Centre horizontalement */
+    vertical-align: middle;
+    /* Centre verticalement */
+    padding: 10px;
+    /* Ajoute de l'espace autour du texte */
+}
+
+#Acceuil #table-container table tr td:first-child {
+    width: 40%;
+    text-align: left;
+    vertical-align: middle;
+    /* Le premier <td> de chaque <tr> prend 40% de la largeur du tableau */
+}
+
+#Acceuil #table-container {
+    display: flex;
+    justify-content: space-between;
+    /* Espace entre les éléments */
+    align-items: flex-start;
+    /* Aligner en haut */
+}
+
+#Acceuil td {
+    border-collapse: separate;
+    border: 3px solid #000;
+    
+}
+
+/*-----Momment fort-----*/
+
+#Acceuil article+article {
+    margin-right: 0;
+    height: auto;
+    width: 35em;
+    margin-top: 20px;
+    background-color: #33AC91;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Acceuil article+article img {
+    width: 15em;
+    height: auto;
+}
+#Acceuil article+article figcaption {
+    font-weight: bold;
+}
+
+#Acceuil article+article>h3 {
+    text-align: center;
+    margin-left: 40px;
+}
+
+/*-----Sites-----*/
+
+#Acceuil #Sites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Acceuil #Sites figcaption, #Sites h2, #Sites h3, #Sites p {
+    color: black;
+    transition-duration: 2s;
+    margin-right: 10px;
+}
+
+#Acceuil #Sites figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Acceuil #Sites #inverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#Acceuil #Sites img {
+    width: 1500px;
+    margin-right: 20px;
+}
+
+#Acceuil #Sites img:hover+figcaption, #Acceuil #Sites img:hover+figcaption h3 {
+    transition-property: color;
+    color: white;
+    transition-duration: 3s;
+}
+
+/*-----Sports-----*/
+
+#Acceuil #Sports {
+    background-color: #3CDB8C;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Acceuil #Sports img {
+    width: 320px;
+    height: 200px;
+}
+
+#Acceuil #Sports figure {
+    display: flex;
+    flex-direction: column;
+}
+
+#Acceuil #Sports figcaption {
+    text-align: center;
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+#Acceuil #Sports a {
+    color: black;
+}
+
+#Acceuil #Sports figcaption:hover {
+    font-size: 1.5em;
+    transition-duration: 1s;
+}
+
+/*-----Paralympiques-----*/
+
+#Acceuil #Paralympiques {
+    display: flex;
+    flex-direction: column;
+    background-color: #33AC91;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#Acceuil #Paralympiques img {
+    width: 460px;
+    height: auto;
+}
+
+#Acceuil #Paralympiques figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+#Acceuil #Paralympiques figcaption {
+    margin-left: 20px;
+}
+
+/*-----Partenaire-----*/
+
+#Acceuil #Partenaire img {
+    width: 500px;
+    height: auto;
+}
+
+#Acceuil aside {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    box-shadow: 0px 4px 8px black;
+}
+
+#Acceuil section+h2 {
+    text-align: center;
+}
+
+/************************************
+*                                   *
+*         fin PAGE Accueil          *
+*                                   *
+************************************/
+
 footer{
     background-color: black;
     color: #ffffff;
     padding-top: 2em;
     padding-bottom: 2.5em;
-    
     display: flex;
     justify-content: left;
     align-items: center;
@@ -455,30 +693,61 @@ footer div{
 
 
 @media (max-width: 1439px){
+    
+    /*-----HEADER-----*/
 
     header {
-        flex-direction: column; /* Les éléments s'empilent sur petits écrans */
+        font-size: 0.4em;
+        background-color: #3CDB8C;
+        padding: 1em 2em; /* Réduit le padding pour les petits écrans */
+        display: flex;
+        justify-content: space-between; /* Répartit l'espace entre les éléments */
         align-items: center;
+        flex-wrap: wrap; /* Permet aux éléments de s'empiler sur les petits écrans */
     }
 
     header > nav {
-        flex-direction: column; /* Le menu s'empile verticalement */
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap; /* Adapte le menu pour les petits écrans */
+        gap: 1em;
     }
 
     header > nav > ul {
-        gap: 2em; /* Réduit l'espacement entre les liens */
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 1.5em;
+        padding: 0;
+        margin: 0;
     }
 
     header a {
-        padding: 10px; /* Réduit le padding pour les petits écrans */
-        width: 100%; /* Les liens occupent toute la largeur disponible */
+        text-decoration: none;
+        color: black;
+        background-color: #2eaf8f;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        text-align: center;
+        display: block; 
     }
 
-
-    img {
-        display: none;
+    header a:hover {
+        background-color: #1a9577;
+        transform: translateY(-2px);
     }
+
+    header img{
+        width: 6em;
+        height: auto;
+    }
+
+    /*----------------------*/
+    /*----------------------*/
+    /*-----Page Escrime-----*/
+    /*----------------------*/
+    /*----------------------*/
 
     /*Logo du début + Titre Escrime*/
     .logo-container {
