@@ -848,7 +848,7 @@ footer div{
         margin: 0 auto;
     }
     
-    .Sportif th, td {
+    .Sportif th, .Sportif td {
         border: 1px solid #ddd;
         padding: 6px;
         text-align: left;
